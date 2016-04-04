@@ -6,8 +6,8 @@ html(lang='es-PE')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet', type='text/css')
     link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-    //link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
     link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
     link(rel='stylesheet', type='text/css', href='assets/css/main.css')
@@ -24,7 +24,22 @@ html(lang='es-PE')
                 +noticias-secundarias('img_grid_secundario', 'Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/.3000 millones | FOTOS', 'Martín Belaunde Lossio', 'img_grid_secundario', 'Sub 20:Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO', 'Sub 20 celebra empate con Paraguay')
 
     section#columnistas
-    section#
+        .container
+            .row
+                +cabecera-roja('COLUMNISTAS')
+                .slider.slick-initialized.slick-slider
+                    .slick-list.draggable(tabinex="0")
+                        .slick-track(style="opacity: 1, width: 3000px")
+                            .items.slick-slide(style="width: 960px", data-slick-index="0")
+                                +columnistas-slider
+
+                            .items.slick-slide(style="width: 960px", data-slick-index="1")
+                                +columnistas-slider
+
+                            .items.slick-slide(style="width: 960px", data-slick-index="2")
+                                +columnistas-slider
+
+
 
                 
                 
