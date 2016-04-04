@@ -1,33 +1,542 @@
+// declarando variables para el header - footer y aside
+//-var medios-nav ['LIBERO.PE','ELPOPULAR.PE','FUNDACIÓN GUSTAVO MOHME LLONA']
+
+mixin social-list()
+  a(class="fa fa-facebook" href="#")
+  a(class="fa fa-twitter" href="#")
+  a(class="fa fa-google-plus" href="#")
+  a(class="fa fa-envelope" href="#")
+  a(class="fa fa-rss" href="#")
+
+mixin aweita(strong)
+    .aw
+        if strong==0
+                .aweitanoticeimg
+                    img(src='./image/img_aweita.jpg')
+                .aweitanotice
+                    strong Juan Román Riquelme, el adiós al 'Último 10' de Argentina
+        else
+                .aweitanoticeimg
+                    img(src='./image/img_aweita.jpg')
+                .aweitanotice
+                    strong Lewis Caarroll:un día como hoy nació el autor de 'Alicia en el'
+mixin titulo(h4)
+    .title
+        .box-title
+            h4= h4
+mixin blog(p)
+        .row
+            .col-md-4
+                img(src='./image/img_blogueros.jpg')
+            .col-md-12
+                if p==0
+                    a(href='#') Augusto Álvarez Rodrich
+                    p Charlie Hebdo,historia que no debe repetirse
+                else if p==1
+                    a(href='#') Ya lo pasado,PASADO
+                    p El único pulpín es Humala
+                else
+                    a(href='#') Augusto Álvarez Rodrich
+                    p Dios ha muerto..tengo las manos
+mixin notic(h4 , p , src )
+    .row
+        .col-md-7 
+            img(src=src)
+        .col-md-9
+            h4=h4
+            p(class='color-red2')=p
+            
 header
-		.top-header.center-block
-				.container.top-publicity
-						img( class="center-block" src="./image/banner_top.jpg")
-				.container
-						row
-								col-md-6
-										a 
-												|LIBERO.PE
-										a
-												|ELPOPULAR.PE
-										a
-												|FUNDACIÓN GUSTAVO MOHME LLONA
-								col-md-6
-										button
-												|SUCRÍBETE AL BOLETÍN 
-										.social
-														.social-ite
-																a(href='')
-																		i.fa.fa-facebook
-														.social-ite
-																a(href='')
-																		i.fa.fa-twitter
-														.social-ite
-																a(href='')
-																		i.fa.fa-google-plus
-														.social-ite
-																a(href='')
-																		img(src="./image/sprites/ico-email.png")
-														.social-ite
-																a(href='')
-																		i.fa.fa-rss					
-			
+    .top-header.bg-gray
+        .container.top-publicity
+            img.img-responsive.center-block(src="./image/banner_top.jpg")
+        .container
+            row
+                .col-md-6
+                  a 
+                      |LIBERO.PE
+                  a
+                      |ELPOPULAR.PE
+                  a
+                      |FUNDACIÓN GUSTAVO MOHME LLONA
+                .col-md-6.text-right
+                    button.label-danger
+                        |SUCRÍBETE AL BOLETÍN 
+                    +social-list
+                    input#search(type="search" placeholder="Buscar")
+                    label(for="search-input")
+                      a.fa.fa-search 
+    .bottom-header
+      .container
+        .row
+          .col-md-4
+            img.img-rsponsive(src="./image/logo-la-republica.jpg")
+          .col-md-4
+            .box-futbol
+              span ESPECIAL DE FÚTBOL
+              br
+              span TODO SOBRE LA CHAMPIONS LEAGUE
+          .col-md-4
+            .box-editorial
+              span La corrupción, los orígenes
+              br
+              span por: Gustavo Mohme Llona
+              img.img-autor.img-responsive(src="./image/img_author.jpg")
+        .row
+          .col-md-12
+            .nav-general-red
+              .btn-group.btn-group-justified(role='group', aria-label='Justified button group with nested dropdown')
+                a.btn.btn-default(href='#', role='button') POLÍTICA
+                a.btn.btn-default(href='#', role='button') ECONOMÍA
+                a.btn.btn-default(href='#', role='button') SOCIEDAD
+                a.btn.btn-default(href='#', role='button') ELECC. REGIONALES
+                a.btn.btn-default(href='#', role='button') DEPORTES
+                a.btn.btn-default(href='#', role='button') CHAMPIONS L.
+                a.btn.btn-default(href='#', role='button') ESPECTÁCULOS
+                a.btn.btn-default(href='#', role='button') ED. EMPRESA
+                a.btn.btn-default(href='#', role='button') REGIONALES
+                .btn-group(role='group')
+                  a.btn.btn-default.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | MÁS SECCIONES 
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider(role='separator')
+                    li
+                      a(href='#') Separated link
+        .row
+          .slick-menu-nav
+        .row
+          .col-md-12
+            img(src='./image/banner-header.jpg')
+.col-md-8
+.col-md-4
+      aside
+        .aside-publicity
+          img(src='./image/banner-aside-home.jpg')
+        .boletin
+          .box-boletin
+            span
+              img(src='./image/img_sucribe.png')
+            h3 Suscríbete a nuestro boletín
+            .box-form
+              input#boletin(type="boletin")
+              label(for="boletin-input")
+            button.btn-submit(type='submit') Suscribirse
+        .aweita.hidden-xs
+            a(href='#')
+                img(src='./image/logo_aweita.jpg' class='logo')
+            +aweita('0')
+            +aweita('strong')
+            +aweita('0')
+            +aweita('strong')
+            br
+            p Más en 
+                a(href='#') Aweita.pe
+            .linkaweita
+        .fotos
+            +titulo('FOTOS DESTACADAS')
+            img(src='./image/img_fotodes_prominent.jpg')
+            h4 Líneas de Nazca: admiten prision preventiva de 6meses para activista de Greenpeace |
+                a(href='#') FOTOS
+        .fotosdeport
+            .asas
+                img(src='./image/img_fotodes.jpg')
+                strong Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie |
+                    a(href='#') FOTOS
+            br    
+            .asas
+                img(src='./image/img_fotodes.jpg')
+                strong Alianza Lima vs Fenix: íntimos ganaron 1-0 en "Noche Blanquizaul" |
+                    a(href='#') VIDEO Y FOTOS
+            br
+            .asas
+                img(src='./image/img_fotodes.jpg')
+                strong Tomas Berdych derrotó 3-0 a Rafael Nadal y avanzó en el Australian Open |
+                    a(href='#') FOTOS
+        .especiales
+            +titulo('ESPECIALES')
+            .descripcion
+                img(src='./image/img_especiales_aside.jpg')
+                p Régimen laboral juvenil
+            .descripcion
+                img(src='./image/img_especiales_aside.jpg')
+                p COP 20
+            .descripcion
+                img(src='./image/img_especiales_aside.jpg')
+                p Concentración de Medios
+            .descripcion
+                img(src='./image/img_especiales_aside.jpg')
+                p Especies peruanas en peligro de extinción
+        .carlincatura
+            +titulo('CARLINCATURA DEL DÍA')
+            h4 Carlincaturas 30-01-2015
+            img(src='./image/img_carlincatura_sd.jpg')
+            h4(class='color-red2') Todas las Carlincaturas
+        .bloguers
+            +titulo('NUESTROS BLOGUEROS')
+            +blog('0')
+            +blog('1')
+            +blog('p')
+            +blog('0')
+            +blog('1')
+            +blog('p')
+            +blog('0')
+            +blog('1')
+            h4(class='color-red2') Todos los blogs
+        .edicion
+            +titulo('EDICIÓN IMPRESA')
+            h4 La República-Lima
+            img(src='./image/img_impreso_sd_prominent.jpg')
+            +notic('Extorsionan a menores en colegios','La República-Norte' ,src="./image/img_impreso_sd.jpg")
+            +notic('Lluvias en Arequipa inundan casas y causan caos en las calles','La República-Sur' ,src="./image/img_impreso_sd_prominent.jpg")
+            +notic('Los Ojos de Oblitas','Domingo' ,src="./image/img_submenu_edimpresa.jpg")
+        .especiales
+            +titulo('INFOGRAFIAS')
+            .descripcion
+                img(src='./image/img_especiales_aside.jpg')
+                p Historico cierre de frontera
+            .descripcion
+                img(src='./image/img_especiales_aside.jpg')
+                p Evoucion de la pobreza de indigencia en América Latina
+        .suscribete
+            img(src='./image/img_sucribe.png')
+            br
+            .formwhite
+                strong La pregunta de hoy
+                p ¿Cree usted que la premier Ana Jara debe renunciar?
+                checkbox
+
+                a(href='#' class='suscribir') Votar
+                p(class='color-red2') Ver resultados  
+            .formwhite
+                strong La pregunta de ayer
+                p ¿Cree usted que se militarizó la conmemoración del fallo de la Haya?
+                checkbox
+                p(class='color-red2') Ver preguntas pasadas
+        .edicion
+            img(src='./image/logo_libero.jpg')
+            +notic('Fiorentina empató 1-1 en su visita al Genoa con gran actuación de Juan Vargas[VIDEO] ','' ,src="./image/img_video_destacado.jpg")
+            +notic('Jefferson Farfán: Schalke 04 tampoco sabe cuándo volverá a las canchas[FOTOS]','' ,src="./image/img_video_destacado.jpg")
+            +notic('Barcelona vs. Villareal:cuales ganaron 3-2 con goles de Lionel Messi y Neymar por Liga BBVA[VIDEO]','' ,src="./image/img_video_destacado.jpg")
+            +notic('Barcelona vs. Villareal:cuales ganaron 3-2 con goles de Lionel Messi y Neymar por Liga BBVA[VIDEO]','' ,src="./image/img_video_destacado.jpg")
+            p Más en
+                a(href='#' class='color-red2') Libero.pe
+            .libero
+        .edicion
+            img(src='./image/logo_popular.jpg')
+            +notic('Joshua Ivanoff está loco por olor d Melissa Loza ','' ,src="./image/fotogaleria_col01_01.jpg")
+            +notic('Corinthias:Paolo Guerrero dedica su gol a Alondra García','' ,src="./image/fotogaleria_col01_01.jpg")
+            +notic('Angie Arizaga es amenzada de muerte[VIDEO]','' ,src="./image/fotogaleria_col01_01.jpg")
+            +notic('Philip Seymour Hoffman:Un año sin el premiado actor(VIDEO)','' ,src="./image/fotogaleria_col01_01.jpg")
+            p Más en
+                a(href='#' class='color-red2') elPopular.pe
+            .libero
+         .edicion
+            img(src='./image/logo_wapa.jpg')
+            +notic('¿Cómo renovar el guardarropa de los mas pequeños en este verano ','' ,src="./image/fotogaleria_col01_01.jpg")
+            +notic('Shakira y Piqué ¡Ya son padres por segunda vez','' ,src="./image/fotogaleria_col01_01.jpg")
+            +notic('Ted 2:Mira el trailer de la cinta','' ,src="./image/fotogaleria_col01_01.jpg")
+            +notic('Como usar zapatos altos sin dolor','' ,src="./image/fotogaleria_col01_01.jpg")
+            p Más en
+                a(href='#' class='color-red2') Wapa.pe
+            .libero
+        .suscribete
+            img(src='./image/img_sucribe.png')
+            br
+                
+            .formwhite
+                strong Reporte ciudadno
+                img(src='./image/img_sd_reporteroc.jpg')
+                p ¿Está permitido que dejen su auto en reiteras ocasiones toda la noche en la puerta de tu casa? PlacaDG6232, eso que antes lo dejaba entre la vereda y mi puerta          
+
+        
+footer
+      .container
+        .row
+          .col-md-4
+            img(src="./image/logo-grupo-la-republica.png")
+            h3 Grupo La República Digital
+            ul
+              li Jr.Camaná 320 Cercado de Lima
+              li Teléfono: 711-6000
+              li (Central Telefónica)
+              li
+                small Todos los derechos reservados - 2015
+          .col-md-8.contenedor
+            .row
+              .col-md-2
+                li
+                  ul
+                    a(href="#") Roger Federer
+                li
+                  ul
+                    a(href="#") SBS
+                li
+                  ul
+                    a(href="#") Scarlett Johansson
+                li
+                  ul
+                    a(href="#") Scotiabank
+                li
+                  ul
+                    a(href="#") Selena Gómez
+                li
+                  ul
+                    a(href="#") Spiderman
+                li
+                  ul
+                    a(href="#") Sporting Cristal
+                li
+                  ul
+                    a(href="#") Sunat
+                li
+                  ul
+                    a(href="#") Telefónica del Perú
+                li
+                  ul
+                    a(href="#") The Walking Dead
+                li
+                  ul
+                    a(href="#") Twitter
+                li
+                  ul
+                    a(href="#") Universidad Cesar Vallejo
+                li
+                  ul
+                    a(href="#") Universidad San Martín
+                li
+                  ul
+                    a(href="#") Universidad de Deportes
+                li
+                  ul
+                    a(href="#") Xbox
+                li
+                  ul
+                    a(href="#") YouTube
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") BBVA
+                li
+                  ul
+                    a(href="#") Xbox
+                li
+                  ul
+                    a(href="#") BCP
+              .col-md-2
+                li
+                  ul
+                    a(href="#") Al fondo hay sitio
+                li
+                  ul
+                    a(href="#") Alejandro Toledo
+                li
+                  ul
+                    a(href="#") Alianza Lima
+                li
+                  ul
+                    a(href="#") Alianza Lima
+                li
+                  ul
+                    a(href="#") Banco de la Nación
+                li
+                  ul
+                    a(href="#") Barack Obama
+                li
+                  ul
+                    a(href="#") Universidad Cesar
+                li
+                  ul
+                    a(href="#") Vallejo
+                li
+                  ul
+                    a(href="#") Universidad San Martín
+                li
+                  ul
+                    a(href="#") Barcelona
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") BBVA
+                li
+                  ul
+                    a(href="#") Xbox
+                li
+                  ul
+                    a(href="#") BCP
+                li
+                  ul
+                    a(href="#") Batman
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") BBVA
+                li
+                  ul
+                    a(href="#") Xbox
+                li
+                  ul
+                    a(href="#") BCP
+              .col-md-2
+                li
+                  ul
+                    a(href="#") One Direction
+                li
+                  ul
+                    a(href="#") ONPE
+                li
+                  ul
+                    a(href="#") Pablo Escobar
+                li
+                  ul
+                    a(href="#") Paolo Guerrero
+                li
+                  ul
+                    a(href="#") Pensión 65
+                li
+                  ul
+                    a(href="#") PNP
+                li
+                  ul
+                    a(href="#") Precio del dólar
+                li
+                  ul
+                    a(href="#") Universidad Cesar Vallejo
+                li
+                  ul
+                    a(href="#") Universidad San Martín
+                li
+                  ul
+                    a(href="#") Premier League
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") BBVA
+                li
+                  ul
+                    a(href="#") Xbox
+                li
+                  ul
+                    a(href="#") BCP
+                li
+                  ul
+                    a(href="#") Proyecto Conga
+                li
+                  ul
+                    a(href="#") PUCP
+                li
+                  ul
+                    a(href="#") Real Madrid
+                li
+                  ul
+                    a(href="#") Redes Sociales
+                li
+                  ul
+                    a(href="#") Reniec
+                li
+                  ul
+                    a(href="#") Robert Pattinson
+              .col-md-2
+                li
+                  ul
+                    a(href="#") Al fondo hay sitio
+                li
+                  ul
+                    a(href="#") Alejandro Toledo
+                li
+                  ul
+                    a(href="#") Alianza Lima
+                li
+                  ul
+                    a(href="#") Alianza Lima
+                li
+                  ul
+                    a(href="#") Banco de la Nación
+                li
+                  ul
+                    a(href="#") Barack Obama
+                li
+                  ul
+                    a(href="#") Universidad Cesar
+                li
+                  ul
+                    a(href="#") Vallejo
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") BBVA 
+                li
+                  ul
+                    a(href="#") Xbox
+                li
+                  ul
+                    a(href="#") BCP
+                li
+                  ul
+                    a(href="#") Universidad San Martín
+                li
+                  ul
+                    a(href="#") Barcelona
+                li
+                  ul
+                    a(href="#") Batman
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") Bayern Múnich
+                li
+                  ul
+                    a(href="#") BBVA
+                li
+                  ul
+                    a(href="#") Xbox
+                li
+                  ul
+                    a(href="#") BCP
+              hr
+        .container
+          .bottom-footer
+            a.contribution Diarios del PAL:Clarín
+            a.contribution La Tercera
+            a.contribution El Universal Colombia
+            a.contribution El Universal Venezuela
+            a.contribution Vanguardia
+            a.contribution La Prensa
+            a.contribution El Salvador
+            a.contribution La Verdad
+            a.contribution Diario Libre
+            a.contribution El diario de hoy
+            a.contribution El Colombiano

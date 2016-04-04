@@ -8,36 +8,641 @@
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   </head>
   <body>
+    <!-- declarando variables para el header - footer y aside-->
     <header>
-      <div class="top-header center-block">
-        <div class="container top-publicity"><img src="./image/banner_top.jpg" class="center-block"></div>
+      <div class="top-header bg-gray">
+        <div class="container top-publicity"><img src="./image/banner_top.jpg" class="img-responsive center-block"></div>
         <div class="container">
           <row>
-            <col-md-6><a>
+            <div class="col-md-6"><a>
                  
-                LIBERO.PE</a><a>ELPOPULAR.PE</a><a>FUNDACIÓN GUSTAVO MOHME LLONA</a></col-md-6>
-            <col-md-6>
-              <button>SUCRÍBETE AL BOLETÍN </button>
-              <div class="social">
-                <div class="social-ite"><a href=""><i class="fa fa-facebook"></i></a></div>
-                <div class="social-ite"><a href=""><i class="fa fa-twitter"></i></a></div>
-                <div class="social-ite"><a href=""><i class="fa fa-google-plus"></i></a></div>
-                <div class="social-ite"><a href=""><img src="./image/sprites/ico-email.png"></a></div>
-                <div class="social-ite"><a href=""><i class="fa fa-rss">					</i></a></div>
-              </div>
-            </col-md-6>
+                LIBERO.PE</a><a>ELPOPULAR.PE</a><a>FUNDACIÓN GUSTAVO MOHME LLONA</a></div>
+            <div class="col-md-6 text-right">
+              <button class="label-danger">SUCRÍBETE AL BOLETÍN </button><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-google-plus"></a><a href="#" class="fa fa-envelope"></a><a href="#" class="fa fa-rss"></a>
+              <input id="search" type="search" placeholder="Buscar">
+              <label for="search-input"><a class="fa fa-search"> </a></label>
+            </div>
           </row>
         </div>
       </div>
+      <div class="bottom-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4"><img src="./image/logo-la-republica.jpg" class="img-rsponsive"></div>
+            <div class="col-md-4">
+              <div class="box-futbol"><span>ESPECIAL DE FÚTBOL</span><br><span>TODO SOBRE LA CHAMPIONS LEAGUE</span></div>
+            </div>
+            <div class="col-md-4">
+              <div class="box-editorial"><span>La corrupción, los orígenes</span><br><span>por: Gustavo Mohme Llona</span><img src="./image/img_author.jpg" class="img-autor img-responsive"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="nav-general-red">
+                <div role="group" aria-label="Justified button group with nested dropdown" class="btn-group btn-group-justified"><a href="#" role="button" class="btn btn-default">POLÍTICA</a><a href="#" role="button" class="btn btn-default">ECONOMÍA</a><a href="#" role="button" class="btn btn-default">SOCIEDAD</a><a href="#" role="button" class="btn btn-default">ELECC. REGIONALES</a><a href="#" role="button" class="btn btn-default">DEPORTES</a><a href="#" role="button" class="btn btn-default">CHAMPIONS L.</a><a href="#" role="button" class="btn btn-default">ESPECTÁCULOS</a><a href="#" role="button" class="btn btn-default">ED. EMPRESA</a><a href="#" role="button" class="btn btn-default">REGIONALES</a>
+                  <div role="group" class="btn-group"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="btn btn-default dropdown-toggle">MÁS SECCIONES <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="slick-menu-nav"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"><img src="./image/banner-header.jpg"></div>
+          </div>
+        </div>
+      </div>
     </header>
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+      <aside>
+        <div class="aside-publicity"><img src="./image/banner-aside-home.jpg"></div>
+        <div class="boletin">
+          <div class="box-boletin"><span><img src="./image/img_sucribe.png"></span>
+            <h3>Suscríbete a nuestro boletín</h3>
+            <div class="box-form">
+              <input id="boletin" type="boletin">
+              <label for="boletin-input"></label>
+            </div>
+            <button type="submit" class="btn-submit">Suscribirse</button>
+          </div>
+        </div>
+        <div class="aweita hidden-xs"><a href="#"><img src="./image/logo_aweita.jpg" class="logo"></a>
+              <div class="aw">
+                <div class="aweitanoticeimg"><img src="./image/img_aweita.jpg"></div>
+                <div class="aweitanotice"><strong>Juan Román Riquelme, el adiós al 'Último 10' de Argentina</strong></div>
+              </div>
+              <div class="aw">
+                <div class="aweitanoticeimg"><img src="./image/img_aweita.jpg"></div>
+                <div class="aweitanotice"><strong>Lewis Caarroll:un día como hoy nació el autor de 'Alicia en el'</strong></div>
+              </div>
+              <div class="aw">
+                <div class="aweitanoticeimg"><img src="./image/img_aweita.jpg"></div>
+                <div class="aweitanotice"><strong>Juan Román Riquelme, el adiós al 'Último 10' de Argentina</strong></div>
+              </div>
+              <div class="aw">
+                <div class="aweitanoticeimg"><img src="./image/img_aweita.jpg"></div>
+                <div class="aweitanotice"><strong>Lewis Caarroll:un día como hoy nació el autor de 'Alicia en el'</strong></div>
+              </div><br>
+          <p>Más en <a href="#">Aweita.pe</a></p>
+          <div class="linkaweita"></div>
+        </div>
+        <div class="fotos">
+              <div class="title">
+                <div class="box-title">
+                  <h4>FOTOS DESTACADAS</h4>
+                </div>
+              </div><img src="./image/img_fotodes_prominent.jpg">
+          <h4>Líneas de Nazca: admiten prision preventiva de 6meses para activista de Greenpeace |<a href="#">FOTOS</a></h4>
+        </div>
+        <div class="fotosdeport">
+          <div class="asas"><img src="./image/img_fotodes.jpg"><strong>Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie |<a href="#">FOTOS</a></strong></div><br>
+          <div class="asas"><img src="./image/img_fotodes.jpg"><strong>Alianza Lima vs Fenix: íntimos ganaron 1-0 en "Noche Blanquizaul" |<a href="#">VIDEO Y FOTOS</a></strong></div><br>
+          <div class="asas"><img src="./image/img_fotodes.jpg"><strong>Tomas Berdych derrotó 3-0 a Rafael Nadal y avanzó en el Australian Open |<a href="#">FOTOS</a></strong></div>
+        </div>
+        <div class="especiales">
+              <div class="title">
+                <div class="box-title">
+                  <h4>ESPECIALES</h4>
+                </div>
+              </div>
+          <div class="descripcion"><img src="./image/img_especiales_aside.jpg">
+            <p>Régimen laboral juvenil</p>
+          </div>
+          <div class="descripcion"><img src="./image/img_especiales_aside.jpg">
+            <p>COP 20</p>
+          </div>
+          <div class="descripcion"><img src="./image/img_especiales_aside.jpg">
+            <p>Concentración de Medios</p>
+          </div>
+          <div class="descripcion"><img src="./image/img_especiales_aside.jpg">
+            <p>Especies peruanas en peligro de extinción</p>
+          </div>
+        </div>
+        <div class="carlincatura">
+              <div class="title">
+                <div class="box-title">
+                  <h4>CARLINCATURA DEL DÍA</h4>
+                </div>
+              </div>
+          <h4>Carlincaturas 30-01-2015</h4><img src="./image/img_carlincatura_sd.jpg">
+          <h4 class="color-red2">Todas las Carlincaturas</h4>
+        </div>
+        <div class="bloguers">
+              <div class="title">
+                <div class="box-title">
+                  <h4>NUESTROS BLOGUEROS</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Augusto Álvarez Rodrich</a>
+                  <p>Charlie Hebdo,historia que no debe repetirse</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Ya lo pasado,PASADO</a>
+                  <p>El único pulpín es Humala</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Augusto Álvarez Rodrich</a>
+                  <p>Dios ha muerto..tengo las manos</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Augusto Álvarez Rodrich</a>
+                  <p>Charlie Hebdo,historia que no debe repetirse</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Ya lo pasado,PASADO</a>
+                  <p>El único pulpín es Humala</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Augusto Álvarez Rodrich</a>
+                  <p>Dios ha muerto..tengo las manos</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Augusto Álvarez Rodrich</a>
+                  <p>Charlie Hebdo,historia que no debe repetirse</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"><img src="./image/img_blogueros.jpg"></div>
+                <div class="col-md-12"><a href="#">Ya lo pasado,PASADO</a>
+                  <p>El único pulpín es Humala</p>
+                </div>
+              </div>
+          <h4 class="color-red2">Todos los blogs</h4>
+        </div>
+        <div class="edicion">
+              <div class="title">
+                <div class="box-title">
+                  <h4>EDICIÓN IMPRESA</h4>
+                </div>
+              </div>
+          <h4>La República-Lima</h4><img src="./image/img_impreso_sd_prominent.jpg">
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/img_impreso_sd.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Extorsionan a menores en colegios</h4>
+                  <p class="color-red2">La República-Norte</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/img_impreso_sd_prominent.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Lluvias en Arequipa inundan casas y causan caos en las calles</h4>
+                  <p class="color-red2">La República-Sur</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/img_submenu_edimpresa.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Los Ojos de Oblitas</h4>
+                  <p class="color-red2">Domingo</p>
+                </div>
+              </div>
+        </div>
+        <div class="especiales">
+              <div class="title">
+                <div class="box-title">
+                  <h4>INFOGRAFIAS</h4>
+                </div>
+              </div>
+          <div class="descripcion"><img src="./image/img_especiales_aside.jpg">
+            <p>Historico cierre de frontera</p>
+          </div>
+          <div class="descripcion"><img src="./image/img_especiales_aside.jpg">
+            <p>Evoucion de la pobreza de indigencia en América Latina</p>
+          </div>
+        </div>
+        <div class="suscribete"><img src="./image/img_sucribe.png"><br>
+          <div class="formwhite"><strong>La pregunta de hoy</strong>
+            <p>¿Cree usted que la premier Ana Jara debe renunciar?</p>
+            <checkbox></checkbox><a href="#" class="suscribir">Votar</a>
+            <p class="color-red2">Ver resultados  </p>
+          </div>
+          <div class="formwhite"><strong>La pregunta de ayer</strong>
+            <p>¿Cree usted que se militarizó la conmemoración del fallo de la Haya?</p>
+            <checkbox></checkbox>
+            <p class="color-red2">Ver preguntas pasadas</p>
+          </div>
+        </div>
+        <div class="edicion"><img src="./image/logo_libero.jpg">
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/img_video_destacado.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Fiorentina empató 1-1 en su visita al Genoa con gran actuación de Juan Vargas[VIDEO] </h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/img_video_destacado.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Jefferson Farfán: Schalke 04 tampoco sabe cuándo volverá a las canchas[FOTOS]</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/img_video_destacado.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Barcelona vs. Villareal:cuales ganaron 3-2 con goles de Lionel Messi y Neymar por Liga BBVA[VIDEO]</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/img_video_destacado.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Barcelona vs. Villareal:cuales ganaron 3-2 con goles de Lionel Messi y Neymar por Liga BBVA[VIDEO]</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+          <p>Más en<a href="#" class="color-red2">Libero.pe</a></p>
+          <div class="libero"></div>
+        </div>
+        <div class="edicion"><img src="./image/logo_popular.jpg">
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Joshua Ivanoff está loco por olor d Melissa Loza </h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Corinthias:Paolo Guerrero dedica su gol a Alondra García</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Angie Arizaga es amenzada de muerte[VIDEO]</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Philip Seymour Hoffman:Un año sin el premiado actor(VIDEO)</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+          <p>Más en<a href="#" class="color-red2">elPopular.pe</a></p>
+          <div class="libero"></div>
+        </div>
+        <div class="edicion"><img src="./image/logo_wapa.jpg">
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>¿Cómo renovar el guardarropa de los mas pequeños en este verano </h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Shakira y Piqué ¡Ya son padres por segunda vez</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Ted 2:Mira el trailer de la cinta</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7"> <img src="./image/fotogaleria_col01_01.jpg"></div>
+                <div class="col-md-9">
+                  <h4>Como usar zapatos altos sin dolor</h4>
+                  <p class="color-red2"></p>
+                </div>
+              </div>
+          <p>Más en<a href="#" class="color-red2">Wapa.pe</a></p>
+          <div class="libero"></div>
+        </div>
+        <div class="suscribete"><img src="./image/img_sucribe.png"><br>
+          <div class="formwhite"><strong>Reporte ciudadno</strong><img src="./image/img_sd_reporteroc.jpg">
+            <p>¿Está permitido que dejen su auto en reiteras ocasiones toda la noche en la puerta de tu casa? PlacaDG6232, eso que antes lo dejaba entre la vereda y mi puerta          </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"><img src="./image/logo-grupo-la-republica.png">
+            <h3>Grupo La República Digital</h3>
+            <ul>
+              <li>Jr.Camaná 320 Cercado de Lima</li>
+              <li>Teléfono: 711-6000</li>
+              <li>(Central Telefónica)</li>
+              <li><small>Todos los derechos reservados - 2015</small></li>
+            </ul>
+          </div>
+          <div class="col-md-8 contenedor">
+            <div class="row">
+              <div class="col-md-2">
+                <li>
+                  <ul><a href="#">Roger Federer</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">SBS</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Scarlett Johansson</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Scotiabank</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Selena Gómez</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Spiderman</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Sporting Cristal</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Sunat</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Telefónica del Perú</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">The Walking Dead</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Twitter</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad Cesar Vallejo</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad San Martín</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad de Deportes</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Xbox</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">YouTube</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BBVA</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Xbox</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BCP</a></ul>
+                </li>
+              </div>
+              <div class="col-md-2">
+                <li>
+                  <ul><a href="#">Al fondo hay sitio</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Alejandro Toledo</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Alianza Lima</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Alianza Lima</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Banco de la Nación</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Barack Obama</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad Cesar</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Vallejo</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad San Martín</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Barcelona</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BBVA</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Xbox</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BCP</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Batman</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BBVA</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Xbox</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BCP</a></ul>
+                </li>
+              </div>
+              <div class="col-md-2">
+                <li>
+                  <ul><a href="#">One Direction</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">ONPE</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Pablo Escobar</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Paolo Guerrero</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Pensión 65</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">PNP</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Precio del dólar</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad Cesar Vallejo</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad San Martín</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Premier League</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BBVA</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Xbox</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BCP</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Proyecto Conga</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">PUCP</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Real Madrid</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Redes Sociales</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Reniec</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Robert Pattinson</a></ul>
+                </li>
+              </div>
+              <div class="col-md-2">
+                <li>
+                  <ul><a href="#">Al fondo hay sitio</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Alejandro Toledo</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Alianza Lima</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Alianza Lima</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Banco de la Nación</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Barack Obama</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad Cesar</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Vallejo</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BBVA </a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Xbox</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BCP</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Universidad San Martín</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Barcelona</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Batman</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Bayern Múnich</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BBVA</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">Xbox</a></ul>
+                </li>
+                <li>
+                  <ul><a href="#">BCP</a></ul>
+                </li>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="bottom-footer"><a class="contribution">Diarios del PAL:Clarín</a><a class="contribution">La Tercera</a><a class="contribution">El Universal Colombia</a><a class="contribution">El Universal Venezuela</a><a class="contribution">Vanguardia</a><a class="contribution">La Prensa</a><a class="contribution">El Salvador</a><a class="contribution">La Verdad</a><a class="contribution">Diario Libre</a><a class="contribution">El diario de hoy</a><a class="contribution">El Colombiano</a></div>
+        </div>
+      </div>
+    </footer>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-hover-dropdown.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.68172.js"></script>
