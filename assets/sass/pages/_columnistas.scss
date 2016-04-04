@@ -1,0 +1,94 @@
+button.principal {
+    background-color:$rojo; 
+    border-radius: 4px;
+    border-color:transparent;
+    color: white;
+    padding: 5px 40px 5px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.barra-roja{
+	background:-webkit-linear-gradient(left, $gradiante-a, $gradiante-b, $gradiante-a);
+    width: 100%;
+    padding:1%;
+    
+
+    button.todos{
+        background-color:$rojo-oscuro; 
+        border-radius: 15px;
+        border-color:transparent;
+        color: white;
+        padding: 5px 14px 5px 14px;
+        font-size: 14px;
+        font-family: "PT Sans";
+    }
+
+    button.letra{
+        font-family: "PT Sans";
+        background-color:transparent; 
+        border-color:transparent;
+        color: white;
+        padding: 5px 14px 5px 14px;
+        font-size: 14px;
+        letter-spacing: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+            &:hover{
+            background-color:$rojo-claro; 
+            border-radius: 15px;
+            border-color:transparent;
+            color: white;
+            padding: 5px 14px 5px 14px;
+            font-size: 14px;
+            font-family: "PT Sans";
+            }
+            &:focus{
+                border:transparent !important;
+            }
+
+    }
+}
+
+li.columnistas{
+    display: inline-block;
+    float: left;
+    width: 235px;
+    height: 100px;
+    padding: 0px 0px 11px 0px;
+    margin: 7px 5px 40px 0px;
+}
+
+ul.sinpadding{
+    padding:0px;
+}
+
+
+.caja-columnistas{
+    background: #e2e6e9;
+    padding: 19px 10px 30px 12px;
+    height: 140px;
+        img{
+            float:left;
+            margin-right: 15px;
+            border:2px solid #fff;
+            box-shadow :0 4px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h5{
+            font-family: "Oswald";
+            font-weight: 300;
+            font-size: 13px;
+            text-transform: uppercase;
+            padding-top: 4px;
+        }
+        p{
+            font-family: "PT Sans";
+            color: #667885;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+}
+
+

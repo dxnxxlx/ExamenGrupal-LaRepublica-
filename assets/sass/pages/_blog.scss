@@ -1,0 +1,95 @@
+.blog-titulo{
+	font-family: "PT Sans";
+	font-weight: 600;
+}
+
+
+.boxes-blog{
+	li{
+	display: inline-block;
+    float: left;
+    margin-right: -5px;
+    width: 255px;
+    height: 238px;
+    border: 2px solid $linea;
+    padding: 40px 10px 11px 10px;
+    margin: 15px;
+	}
+	small{
+		text-align: center;
+		display: block;
+		font-weight: 100;
+    	font-family: "PT Sans";
+    	font-size: 12px;
+	}
+	
+
+}
+
+
+.titulo-noticia{
+	font-family: "Oswald";
+	font-weight:300;
+	color:$gris;
+	font-size:15px;
+		i.fa.fa-angle-double-down{
+			color:$rojo;
+    		font-size: 20px;
+    		margin-left: 5px;
+		}
+}
+
+.caja-blog{
+	background: #e2e6e9;
+    padding: 19px 10px 30px 12px;
+    height: 110px;
+    	img{
+    		float:left;
+    		margin-right: 15px;
+    		border:2px solid #fff;
+    		box-shadow :0 4px 5px rgba(0, 0, 0, 0.7);
+    	}
+
+    	h5{
+    		font-family: "Oswald";
+			font-weight: 300;
+			font-size: 13px;
+			text-transform: uppercase;
+			padding-top: 4px;
+    	}
+    	p{
+    		font-family: "PT Sans";
+    		color: #667885;
+    		font-size: 15px;
+    		font-weight: 600;
+    	}
+
+}
+
+.datos-blog{
+    h4{
+        font-weight: 600;
+        height: 38px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

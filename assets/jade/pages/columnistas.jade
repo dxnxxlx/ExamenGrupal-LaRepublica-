@@ -9,15 +9,68 @@ html(lang='es-PE')
     link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
     link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
-
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/main.css')
+    
   body
+     include mixins
+    
+    .row.clearfix
+        +titulo-seccion('Columnistas')
+        .row
+            .col-md-16
+                .container 
+                    .boxes-blog
+                        h3.titulo-noticia LO ÚLTIMO EN COLUMNISTAS
+                            i.fa.fa-angle-double-down
+                        ul
+                            +columnistas('columnistas')
+                            +columnistas('columnistas')
+    seccion
+        .text-center
+            button.principal todas las columnas
+        .row
+            .col-md-16
+                .container 
+                    .boxes-blog
+                        h3.titulo-noticia TODOS LOS COLUMNISTAS
+                            i.fa.fa-angle-double-down
+
+                    .barra-roja.text-center
+                        button.todos TODOS
+                        button.letra ABC
+                        button.letra DEF
+                        button.letra GHI
+                        button.letra JKL
+                        button.letra MNO
+                        button.letra PQRS
+                        button.letra TUV
+                        button.letra WXYZ
+                    ul.sinpadding
+                        +escritores('Tiro al blanco','Cristal de Mira','Jaque Perpetuo','Jaque Perpetuo')
+                        +escritores('Delito de Opinión','Actualidad Económico - Oscar Dancourt','Mirada externa','Defensa')
+                        +escritores('Tiro al blanco','Cristal de Mira','Jaque Perpetuo','Jaque Perpetuo')
+                        +escritores('Delito de Opinión','Actualidad Económico - Oscar Dancourt','Mirada externa','Defensa')
+                        +escritores('Tiro al blanco','Cristal de Mira','Jaque Perpetuo','Jaque Perpetuo')
+                        +escritores('Delito de Opinión','Actualidad Económico - Oscar Dancourt','Mirada externa','Defensa')
+                        +escritores('Tiro al blanco','Cristal de Mira','Jaque Perpetuo','Jaque Perpetuo')
+                        +escritores('Delito de Opinión','Actualidad Económico - Oscar Dancourt','Mirada externa','Defensa')
+                        +escritores('Tiro al blanco','Cristal de Mira','Jaque Perpetuo','Jaque Perpetuo')
+                        +escritores('Delito de Opinión','Actualidad Económico - Oscar Dancourt','Mirada externa','Defensa')
+                        +escritores('Tiro al blanco','Cristal de Mira','Jaque Perpetuo','Jaque Perpetuo')
+                        +escritores('Delito de Opinión','Actualidad Económico - Oscar Dancourt','Mirada externa','Defensa')
+                        +escritores('Tiro al blanco','Cristal de Mira','Jaque Perpetuo','Jaque Perpetuo')
+                        +escritores('Delito de Opinión','Actualidad Económico - Oscar Dancourt','Mirada externa','Defensa')
+
+            
+
+
+                            
+
 
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='js/bootstrap.min.js')
-    script(type='text/javascript', src='js/slick.min.js')
-    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
-    script(type='text/javascript', src='js/modernizr.custom.68172.js')
-    script(type='text/javascript', src='js/respond.js')
-      
+    script(type='text/javascript', src='assets/js/bootstrap.min.js')
+    script(type='text/javascript', src='assets/js/slick.min.js')
+    script(type='text/javascript', src='assets/js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='assets/js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='assets/js/respond.js')  
