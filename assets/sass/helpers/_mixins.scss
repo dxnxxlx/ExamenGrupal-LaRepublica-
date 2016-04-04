@@ -1,0 +1,12 @@
+@mixin mayus {
+	text-transform: uppercase;
+}
+
+@mixin titulares($fuente) {
+	font-family: 'Open Sans';
+	font-size: $fuente;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: white;
+	text-shadow: 2px 2px 1px black;
+}

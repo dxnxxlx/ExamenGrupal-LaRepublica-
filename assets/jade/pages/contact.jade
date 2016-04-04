@@ -13,57 +13,60 @@ html(lang='es-PE')
     link(rel='stylesheet', type='text/css', href='assets/css/main.css')
 
   body
+    include ../helpers/variables
+    include ../helpers/mixins
     #contacto
         .container
             .row 
                 .col-xs-12
                     h1.text-center Contáctese con nosotros
-                    p Llena este formulario si necesita enviarnos alguna información acercadel contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
+                    p.text-contacto Llena este formulario si necesita enviarnos alguna información acercadel contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
 
                 .col-xs-12
+                    .formulario-cuerpo
 
-                    form
-                        input(type="text", class="formulario", placeholder="Nombres Completos")
-                        input(type="text", class="formulario", placeholder="Correo electrónico")
-                        input(type="text", class="formulario", placeholder="Correo electrónico")
-                        label (Opcional)
-                .col-xs-12
-
-                    h3 Elija un destinatario
-
-                    form
-                        .form-item.form-type-radios.form-item-cid
-                            input.form-radio(type="radio")
-                            label.contacto-label1 Sugerencia para el sitio web
-                            label.contacto-label2 (Ej: funcionamiento y mejoras para el sitio)
-
-                        .form-item.form-type-radios.form-item-cid
-                            input.form-radio(type="radio")
-                            label.contacto-label1 Dirección periodística
-                            label.contacto-label2 (Ej: Sugerencia para la nota de prensa)
-
-                        .form-item.form-type-radios.form-item-cid
-                            input.form-radio(type="radio")
-                            label.contacto-label1 Dirección comercial
-                            label.contacto-label2 (Ej: Publicidad en diarios o sitios web)
-
-                        .form-item.form-type-radios.form-item-cid
-                            input.form-radio(type="radio")
-                            label.contacto-label1 Cartas al director
-                            label.contacto-label2 (Ej: denuncias, comentarios e impresiones)
-
-                        .form-item.form-type-radios.form-item-cid
-                            input.form-radio(type="radio")
-                            label.contacto-label1 Promociones y productos del diario
-                            label.contacto-label2 (Ej: Promociones, tablet, etc)
-
-                        .form-item.form-type-radios.form-item-cid
-                            input.form-radio(type="radio")
-                            label.contacto-label1 Archivo periodístico
-                            label.contacto-label2 (Ej: Ediciones impresas/fotos)
+                        form
+                            input(type="text", class="formulario", placeholder="Nombres Completos")
+                            input(type="text", class="formulario", placeholder="Correo electrónico")
+                            input(type="text", class="formulario", placeholder="Teléfonos")
+                            label.label-peque (Opcional)
                     
-                        textarea(type="text", class="formulario", placeholder="Mensaje")
-                        button.btn-contacto(type="submit") ENVIAR
+
+                        h3 Elija un destinatario
+
+                        form
+                            .form-item.form-type-radios.form-item-cid
+                                input.form-radio(type="radio")
+                                label.contacto-label1 Sugerencia para el sitio web
+                                label.contacto-label2 (Ej: funcionamiento y mejoras para el sitio)
+
+                            .form-item.form-type-radios.form-item-cid
+                                input.form-radio(type="radio")
+                                label.contacto-label1 Dirección periodística
+                                label.contacto-label2 (Ej: Sugerencia para la nota de prensa)
+
+                            .form-item.form-type-radios.form-item-cid
+                                input.form-radio(type="radio")
+                                label.contacto-label1 Dirección comercial
+                                label.contacto-label2 (Ej: Publicidad en diarios o sitios web)
+
+                            .form-item.form-type-radios.form-item-cid
+                                input.form-radio(type="radio")
+                                label.contacto-label1 Cartas al director
+                                label.contacto-label2 (Ej: denuncias, comentarios e impresiones)
+
+                            .form-item.form-type-radios.form-item-cid
+                                input.form-radio(type="radio")
+                                label.contacto-label1 Promociones y productos del diario
+                                label.contacto-label2 (Ej: Promociones, tablet, etc)
+
+                            .form-item.form-type-radios.form-item-cid
+                                input.form-radio(type="radio")
+                                label.contacto-label1 Archivo periodístico
+                                label.contacto-label2 (Ej: Ediciones impresas/fotos)
+                        
+                            textarea(type="text", class="formulario", placeholder="Mensaje")
+                            button.btn-contacto(type="submit") ENVIAR
 
 
 

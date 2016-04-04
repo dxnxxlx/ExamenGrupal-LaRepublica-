@@ -19,25 +19,30 @@ html(lang='es-PE')
         .container
             .row
                 +titular-portada('guerra en la municipalidad de lima metropolitana', 'Hace 12 minutos', 'política')
-            .row
-                +noticia-principal('img_grid_principal', 'JNE impulsará campaña en favor de la aprobación de la Reforma Electoral', 'Vocero del JNE')
-                +noticias-secundarias('img_grid_secundario', 'Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/.3000 millones | FOTOS', 'Martín Belaunde Lossio', 'img_grid_secundario', 'Sub 20:Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO', 'Sub 20 celebra empate con Paraguay')
 
-    section#columnistas
+            .row
+                .col-xs-12.col-md-6
+                    a(href="#").noticia-principal
+                        p JNE inpulsará campaña en favor de la aprobación de la Reforma Electoral
+                .col-xs-12.col-md-6
+                    a(href="#").noticia-secundaria
+                        p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | Fotos
+                    a(href="#").noticia-secundaria
+                        p Sub 20 Perú vs Paraguay: bicolor empató 1-1  y pasó al hexagonal final del Sudamericano | Video
+
+    section
         .container
-            .row
+            .row#columnistas
+
                 +cabecera-roja('COLUMNISTAS')
-                .slider.slick-initialized.slick-slider
-                    .slick-list.draggable(tabinex="0")
-                        .slick-track(style="opacity: 1, width: 3000px")
-                            .items.slick-slide(style="width: 960px", data-slick-index="0")
-                                +columnistas-slider
 
-                            .items.slick-slide(style="width: 960px", data-slick-index="1")
-                                +columnistas-slider
+                .columnista-slider
+        
+                    +columnistas-slider
+                    
+                    +columnistas-slider
 
-                            .items.slick-slide(style="width: 960px", data-slick-index="2")
-                                +columnistas-slider
+                    +columnistas-slider
 
 
 
