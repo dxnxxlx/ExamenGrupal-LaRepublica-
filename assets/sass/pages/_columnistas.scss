@@ -53,7 +53,7 @@ button.principal {
 li.columnistas{
     display: inline-block;
     float: left;
-    width: 235px;
+    width: 232px;
     height: 100px;
     padding: 0px 0px 11px 0px;
     margin: 7px 5px 40px 0px;
@@ -87,6 +87,9 @@ ul.sinpadding{
             color: #667885;
             font-size: 14px;
             font-weight: 600;
+        }
+        &:hover{
+            background: white;
         }
 
 }

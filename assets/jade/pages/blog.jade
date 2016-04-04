@@ -12,13 +12,14 @@ html(lang='es-PE')
     link(rel='stylesheet', type='text/css', href='assets/css/dist/main.css')
     
   body
-     include mixins
-    
-    .row.clearfix
-        +titulo-seccion('Blogs')
-        .row
-            .col-md-16
-                .container 
+    include ../helpers/mixins
+    include ../layout/header
+
+    section
+        .container
+            +titulo-seccion('Blogs')
+            .row
+                .col-md-12 
                     .boxes-blog
                         h3.titulo-noticia LO ÚLTIMO EN BLOG
                             i.fa.fa-angle-double-down
@@ -35,6 +36,7 @@ html(lang='es-PE')
                             +blog('blog')
                             +blog('blog')
 
+    include ../layout/footer
 
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')

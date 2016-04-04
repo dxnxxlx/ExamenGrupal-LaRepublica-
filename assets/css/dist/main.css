@@ -7,6 +7,34 @@ h1 {
 p {
   margin: 0 0 2px; }
 
+h1, h2, h3, h4, h5, h6, small {
+  color: black; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 740px; } }
+@media (min-width: 960px) {
+  .container {
+    width: 980px; } }
+@media (min-width: 1100px) {
+  .container {
+    width: 980px; } }
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
 button.principal {
   background-color: #BA1414;
   border-radius: 4px;
@@ -52,7 +80,7 @@ button.principal {
 li.columnistas {
   display: inline-block;
   float: left;
-  width: 235px;
+  width: 232px;
   height: 100px;
   padding: 0px 0px 11px 0px;
   margin: 7px 5px 40px 0px; }
@@ -80,6 +108,8 @@ ul.sinpadding {
     color: #667885;
     font-size: 14px;
     font-weight: 600; }
+  .caja-columnistas:hover {
+    background: white; }
 
 .blog-titulo {
   font-family: "PT Sans";
@@ -105,7 +135,8 @@ ul.sinpadding {
   font-family: "Oswald";
   font-weight: 300;
   color: #768596;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-left: 31px; }
   .titulo-noticia i.fa.fa-angle-double-down {
     color: #BA1414;
     font-size: 20px;
@@ -135,5 +166,15 @@ ul.sinpadding {
 .datos-blog h4 {
   font-weight: 600;
   height: 38px; }
+
+@media screen and (min-width: 500px) and (max-width: 667px) {
+  ul.sinpadding {
+    margin-left: 10%; }
+
+  .boxes-blog li {
+    margin-left: 22%; } }
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  ul.sinpadding {
+    margin-left: 20%; } }
 
 /*# sourceMappingURL=main.css.map */

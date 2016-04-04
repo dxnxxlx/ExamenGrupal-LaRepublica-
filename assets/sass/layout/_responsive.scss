@@ -1,0 +1,21 @@
+//blog y columnistas-responsive//
+
+@media screen and (min-width: 500px) and (max-width: 667px) {
+   ul.sinpadding{
+   	margin-left: 10%;
+   }
+   .boxes-blog li {
+   		margin-left: 22%;
+   }
+ 
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+   ul.sinpadding{
+   	margin-left: 20%;
+   }
+
+   h3.titulo-noticia{
+		
+   }
+}
