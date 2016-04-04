@@ -1,25 +1,65 @@
-doctype html
-html(lang='es-PE')
-  head
-    meta(charset='UTF-8')
-    title Home
-    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+mixin redes
+    .redes
+        ul
+            li: span: a: i.fa.fa-facebook
+            li: span: a: i.fa.fa-google-plus
+            li: span: a: i.fa.fa-twitter
 
-  body
+mixin titular-portada(titulo, fecha, seccion)
+    .col-xs-12
+        h1= titulo
+        .datos-portada
+            ul
+                li: +redes
+                li: p.fecha-titular= fecha 
+                li: p.seccion= seccion
 
-    
+mixin noticia-principal(imagen, titular, alt)
+    .col-6-sm
+        .noticia-portada
+            .foto-portada
+                img(src="assets/image/#{imagen}.jpg", alt="#{alt}")
+            .sombra
+                h2.titular= titular   
 
-    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='js/bootstrap.min.js')
-    script(type='text/javascript', src='js/slick.min.js')
-    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
-    script(type='text/javascript', src='js/modernizr.custom.68172.js')
-    script(type='text/javascript', src='js/respond.js')
-      
+mixin noticias-secundarias(imagen1, titular1, alt1, imagen2, titular2, alt2)
+    .col-6-sm
+        .noticia-portada.noticia-secundaria
+            .foto-portada
+                img(src="assets/image/#{imagen1}.jpg", alt="#{alt1}")
+            .sombra
+                h3.titular= titular1 
+        .noticia-portada.noticia-secundaria
+            .foto-portada
+                img(src="assets/image/#{imagen2}.jpg", alt="#{alt2}")
+            .sombra
+                h3.titular= titular2
+
+mixin columnista(foto, alt, columnista, titulo)
+    .col-xs-6.col-sm-4.col-md-2
+        a(href="#").thumbnail
+            img(src="assets/image/#{foto}.jpg", alt="#{alt}")
+        p.columnistas-portada= columnista
+        p.titulo-columna-portada= titulo
+
+mixin mario
+    +columnista('img-columnistas', 'Mario Vargas Llosa', 'Mario Vargas Llosa', 'Megarrenuncia apulpinante')
+mixin augus
+    +columnista('img_blogueros', 'Augusto Álvarez Rodrich', 'Augusto Álvarez Rodrich', 'Respuesta a una derrota estridente')
+
+mixin columnistas-slider
+    +mario
+    +augus
+    +mario
+    +augus
+    +mario
+    +columnista('img_blogueros', 'Mario Vargas Llosa', 'Mario Vargas Llosa', 'Megarrenuncia apulpinante')
+
+mixin cabecera-roja(cabecera)
+    p.cabecera-roja
+        a: span= cabecera
+
+
+mixin cabecera-gris(cabecera)
+    p.cabecera-gris
+        a: span= cabecera
