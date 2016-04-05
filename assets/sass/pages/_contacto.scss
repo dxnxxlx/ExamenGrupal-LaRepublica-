@@ -1,0 +1,67 @@
+#contacto{
+	font-family: 'PT Sans';
+	.text-contacto{
+		padding: 20px 0 10px;
+	}
+	.formulario-cuerpo{
+		width: 60%;
+		margin: auto;
+		.formulario{
+			display: block;
+			background-color: #EEEEEE;
+			border-radius: 4px;
+			padding: 7px 8px;
+			font-size: 15px;
+			margin: 25px auto;
+			width: 100%;
+            border-bottom: 2px solid #DFDFDF;
+            border-right: 1px solid #C1C1C1;
+		}
+		h3{
+			font-size: 18px;
+			font-weight: 700;
+		}
+		label{
+			font-weight: 400;
+			&.contacto-label2{
+				float: right;
+			}
+			&.label-peque{
+				font-size: 12px;
+				display: block;
+				margin-top: -10px;
+    			margin-bottom: 35px;
+			}
+		}
+		textarea{
+			height: 150px;
+			display: block;
+            font-size: 14px;
+            background-color: #EEE;
+            border-radius: 4px;
+            padding: 5px 8px;
+            margin: 30px 0 15px;
+            border: 2px inset white;
+            outline: transparent;
+            border-bottom: 1px solid #DFDFDF;
+            border-right: 1px solid #C1C1C1;
+
+		}
+		button{
+			font-weight: 700;
+			display: block;
+			color: white;
+			background-color: #080808;
+			border: none;
+			border-radius: 4px;
+			margin: 5px auto 20px;
+            border: none;
+            padding: 7px 70px;
+            margin: 10 auto 45px;
+            display: block;
+		}
+		@media (max-width: 767px){
+			width: 90%;
+		}
+	}
+}
