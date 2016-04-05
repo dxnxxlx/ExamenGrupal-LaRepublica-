@@ -4,5 +4,14 @@
     border-bottom: 2px solid $border-gray;
         .socialnav{
             padding-top: 10px;
+            a{
+                font-family: 'PT Sans',arial;
+                font-weight: bold;
+                color:$font-gray;
+                font-size: 12px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
         }
+        
 }

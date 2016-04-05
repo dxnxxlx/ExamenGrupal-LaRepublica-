@@ -94,6 +94,361 @@ h1 {
   border-bottom: 2px solid #D7DCE1; }
   .top-header .socialnav {
     padding-top: 10px; }
+    .top-header .socialnav a {
+      font-family: 'PT Sans',arial;
+      font-weight: bold;
+      color: #7D7D7D;
+      font-size: 12px;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+#home {
+  text-align: center; }
+  #home .color-red {
+    color: #8C0000; }
+  #home .color-red2 {
+    color: #C00101; }
+  #home .color-gris {
+    color: #F4F5F7; }
+  #home span {
+    font-size: 5.6rem;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #home h2 {
+    font: 500 15px "Oswald", "Helvetica", Arial, sans-serif; }
+  #home h4 {
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif; }
+  #home h5 {
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-weight: bold; }
+  #home h3 {
+    font: bold 37px "PT Sans", "Helvetica", Arial, sans-serif; }
+  #home h6 {
+    font-family: "PT Sans","Helvetica",Arial,sans-serif;
+    font-size: 15px;
+    line-height: 130%; }
+  #home #portada ul {
+    padding: 0 250px; }
+    #home #portada ul li {
+      color: #9B9FA5;
+      float: left;
+      margin-left: 48px; }
+      #home #portada ul li a {
+        font-size: 13px;
+        font-weight: bold;
+        color: #9B9FA5; }
+    #home #portada ul li:first-child {
+      list-style: none; }
+  #home .img1 {
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: url(../image/img_grid_principal.jpg);
+    height: 470px; }
+  #home .img2 {
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: url(../image/img_grid_secundario.jpg);
+    height: 230px; }
+  #home .img3 {
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: url(../image/img_grid_especiales.jpg);
+    height: 230px; }
+  #home .img4 {
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: url(../image/img_especiales.jpg);
+    height: 200px; }
+  #home .img5 {
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: url(../image/img_especiales_aside.jpg);
+    height: 200px; }
+  #home .banneraside {
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: url(../image/banner-aside-home.jpg);
+    height: 720px; }
+  #home #columnist {
+    margin: 20px 0px; }
+    #home #columnist .title, #home #columnist .box-title {
+      margin-top: 0px;
+      background-color: #8C0000; }
+      #home #columnist .title h2, #home #columnist .box-title h2 {
+        background-color: #8C0000;
+        margin: -10px 300px; }
+    #home #columnist .container {
+      background-color: #F2F2F2; }
+    #home #columnist img {
+      width: 100%;
+      padding: 5px;
+      background-color: white; }
+    #home #columnist p {
+      font-size: 11px;
+      color: #000;
+      text-decoration: underline; }
+  #home #noticias {
+    text-align: left; }
+    #home #noticias ul {
+      padding: 0px;
+      margin-top: 20px; }
+      #home #noticias ul li {
+        color: #9B9FA5;
+        float: left;
+        margin-left: 20px; }
+        #home #noticias ul li a {
+          font-size: 13px;
+          font-weight: bold;
+          color: #9B9FA5;
+          margin-left: 5px; }
+      #home #noticias ul li:first-child {
+        list-style: none;
+        margin-left: 0px; }
+      #home #noticias ul .comentario p {
+        margin-top: -20px; }
+    #home #noticias .asid {
+      padding: 10px 0px;
+      border-bottom: 1px solid #CDCDCD; }
+      #home #noticias .asid p {
+        font-size: 12px; }
+      #home #noticias .asid h3 {
+        font-size: 28px; }
+      #home #noticias .asid .col-md-6 img {
+        width: 100%; }
+  #home .portada {
+    padding: 0px 0px 10px 0px; }
+  #home #port h3 {
+    position: absolute;
+    bottom: -2px;
+    left: 14px;
+    text-align: left; }
+  #home .noticiasvariado {
+    border: 1px solid #CDCDCD;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 30px; }
+    #home .noticiasvariado .shadow {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      min-height: 70%;
+      background: linear-gradient(to bottom, transparent 0%, #1F1F1F 99%); }
+    #home .noticiasvariado .subt {
+      font-size: 14px; }
+  #home .img4 h4, #home .img5 h4 {
+    position: absolute;
+    bottom: -2px;
+    left: 14px;
+    text-align: left;
+    font-weight: bold;
+    padding: -1px 10px 10px;
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: -0.06em;
+    text-shadow: 1px 2px 0 #000; }
+  #home .img4 .color-red2, #home .img5 .color-red2 {
+    left: 41px;
+    top: -27px;
+    position: absolute; }
+  #home .img4 .subt, #home .img5 .subt {
+    color: black;
+    position: absolute;
+    bottom: -49px;
+    font-size: 14px; }
+  #home .suscribete {
+    background-image: url(../image/archive-sidebar-bg.jpg);
+    text-align: center;
+    padding: 18px 12px; }
+    #home .suscribete img {
+      position: absolute;
+      left: 150px; }
+    #home .suscribete .formwhite {
+      padding: 50px 40px 20px 40px;
+      background-color: white;
+      margin-bottom: 10px; }
+      #home .suscribete .formwhite input {
+        border-radius: 4px;
+        border: 1px solid #CDCDCD;
+        background-color: #F4F5F7;
+        width: 100%;
+        margin-bottom: 15px; }
+      #home .suscribete .formwhite .form input {
+        width: 10%; }
+    #home .suscribete #reporte {
+      padding: 50px 40px; }
+  #home .suscribir {
+    background-color: #C00101;
+    padding: 5px 60px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px; }
+  #home .logo {
+    padding: 0px 10px 20px 0px; }
+  #home .aweita {
+    color: #5E5F61;
+    padding: 30px 10px 0px 10px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #CDCDCD; }
+    #home .aweita a {
+      color: #80307D; }
+    #home .aweita .aweitanoticeimg {
+      float: left; }
+      #home .aweita .aweitanoticeimg img {
+        width: 100%; }
+    #home .aweita .aweitanotice {
+      padding: 10px;
+      text-align: left; }
+    #home .aweita img:hover {
+      background-color: #CDCDCD;
+      padding: 5px; }
+    #home .aweita .linkaweita {
+      margin: 0px 85px;
+      height: 7px;
+      background-color: #80307D; }
+  #home .title, #home .box-title {
+    margin: 40px 0px;
+    text-align: center;
+    height: 6px;
+    background-color: #748595; }
+  #home .box-title {
+    color: white;
+    padding: 0px 105px; }
+    #home .box-title h2 {
+      background-color: #748595;
+      position: absolute;
+      font-size: 16px;
+      padding: 6px 10px;
+      margin-top: -10px; }
+  #home .fotos img {
+    border: 1px solid #748595;
+    width: 100%;
+    margin-bottom: 20px; }
+  #home .fotosdeport {
+    padding: 37px 0px;
+    border-bottom: 1px solid #CDCDCD;
+    font-size: 14px; }
+    #home .fotosdeport img {
+      padding: 6px;
+      float: left; }
+    #home .fotosdeport .asas {
+      padding: 0px 50px 0px 0px; }
+      #home .fotosdeport .asas strong {
+        color: #38424B; }
+    #home .fotosdeport :hover img {
+      padding: 0px;
+      border: 3px solid #748595; }
+  #home .especiales {
+    border-bottom: 1px solid #CDCDCD;
+    text-align: center; }
+    #home .especiales img {
+      width: 100%;
+      margin-bottom: 15px; }
+    #home .especiales p {
+      width: 90%;
+      margin-left: 9px;
+      text-align: center;
+      position: absolute;
+      margin-top: -70px;
+      padding: 10px;
+      background-color: white;
+      opacity: 0.8;
+      color: black;
+      font-weight: bold; }
+    #home .especiales .descripcion p {
+      text-align: center; }
+  #home .carlincatura {
+    text-align: center; }
+    #home .carlincatura img {
+      padding-bottom: 50px;
+      border-bottom: 1px solid #cdcdcd;
+      width: 100%; }
+    #home .carlincatura .color-red2 {
+      margin-top: -20px; }
+    #home .carlincatura .title, #home .carlincatura .box-title {
+      margin-top: 0px;
+      background-color: #8C0000; }
+      #home .carlincatura .title h2, #home .carlincatura .box-title h2 {
+        background-color: #8C0000; }
+  #home .bloguers {
+    border-bottom: 1px solid #cdcdcd; }
+    #home .bloguers .row {
+      padding: 10px 0px; }
+    #home .bloguers h4 {
+      text-align: center; }
+    #home .bloguers a {
+      font-size: 11px;
+      color: #000;
+      text-decoration: underline; }
+    #home .bloguers p {
+      font-size: 14px;
+      font-weight: bold; }
+  #home .edicion {
+    border-bottom: 1px solid #cdcdcd;
+    text-align: center; }
+    #home .edicion .row {
+      padding: 20px 26px; }
+    #home .edicion .col-md-9 {
+      text-align: left; }
+    #home .edicion .col-md-7 img {
+      width: 100%; }
+    #home .edicion .title, #home .edicion .box-title {
+      margin-top: 0px;
+      background-color: #8C0000; }
+      #home .edicion .title h2, #home .edicion .box-title h2 {
+        background-color: #8C0000; }
+  #home #sport {
+    margin: 20px 0px;
+    border: 1px solid #CDCDCD; }
+    #home #sport :hover img {
+      padding: 0px;
+      border: 3px solid #748595; }
+    #home #sport h4 {
+      font-size: 13px;
+      font-weight: bold; }
+  #home .shadow {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    min-height: 70%;
+    background: linear-gradient(to bottom, transparent 0%, #202020 89%); }
+    #home .shadow h3 {
+      text-shadow: 1px 3px 0 #000;
+      line-height: 1.1;
+      letter-spacing: -0.06em; }
+    #home .shadow .fs28 {
+      font-size: 30px; }
+  #home .publicidad1 {
+    background: url(../image/banner-aside-home.jpg) no-repeat center;
+    background-size: cover;
+    height: 700px; }
+
+.imgre {
+  background-image: url(../image/img_sd_reporteroc.jpg);
+  height: 200px; }
 
 #titulares {
   margin-bottom: 20px; }

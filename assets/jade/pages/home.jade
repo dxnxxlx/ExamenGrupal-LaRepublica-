@@ -1,6 +1,5 @@
 doctype html
 html(lang='es-PE')
-
 			head
 				meta(charset='UTF-8')
 				title Home
@@ -11,19 +10,17 @@ html(lang='es-PE')
 				link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
 				link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 				link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
-    		link(rel="stylesheet", type="text/css", href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css")
 				link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
 				link(rel='stylesheet', type='text/css', href='assets/css/main.css')  
 			body
-					include ../helpers/variables.jade
-					include ../helpers/mixins.jade
-					include ../layout/header.jade
-					include ../pages/home-content.jade
-					include ../layout/aside.jade
-					include ../layout/footer.jade
-				
+				include ../helpers/variables.jade
+				include ../helpers/mixins.jade
+				include ../layout/header.jade
+				include ../pages/home-content.jade
+				include ../layout/aside.jade
+				include ../layout/footer.jade
 				section#titulares
-						.container
+					.container
 							.row
 									+titular-portada('guerra en la municipalidad de lima metropolitana', 'Hace 12 minutos', 'política')
 	
@@ -36,7 +33,6 @@ html(lang='es-PE')
 													p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | Fotos
 											a(href="#").noticia-secundaria
 													p Sub 20 Perú vs Paraguay: bicolor empató 1-1  y pasó al hexagonal final del Sudamericano | Video
-
 				section
 						.container
 								.row#columnistas
@@ -48,7 +44,11 @@ html(lang='es-PE')
 												.slider
 														+columnistas-slider
 		
+												.slider   
+														
 														+columnistas-slider
+		
+												.slider    
 		
 														+columnistas-slider
 		
@@ -104,9 +104,8 @@ html(lang='es-PE')
 														+roque
 														+you
 														+real
-														+real                
-												
-												
+														+real               
+					
 				script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
 				script(src='http://code.jquery.com/jquery-1.11.2.min.js')
 				script(type="text/javascript", src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js")
@@ -118,4 +117,3 @@ html(lang='es-PE')
 				script(type='text/javascript', src='assets/js/modernizr.custom.68172.js')
 				script(type='text/javascript', src='assets/js/respond.js')
 				script(type='text/javascript', src='assets/js/main.js')
-					
