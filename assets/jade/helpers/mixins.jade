@@ -9,12 +9,12 @@ mixin aweita(strong)
     .aw
         if strong==0
                 .aweitanoticeimg
-                    img(src='./image/img_aweita.jpg')
+                    img(src='assets/image/img_aweita.jpg')
                 .aweitanotice
                     strong Juan Román Riquelme, el adiós al 'Último 10' de Argentina
         else
                 .aweitanoticeimg
-                    img(src='./image/img_aweita.jpg')
+                    img(src='assets/image/img_aweita.jpg')
                 .aweitanotice
                     strong Lewis Caarroll:un día como hoy nació el autor de 'Alicia en el'
 mixin titulo(h4)
@@ -24,7 +24,7 @@ mixin titulo(h4)
 mixin blog(p)
         .row
             .col-md-4
-                img(src='./image/img_blogueros.jpg')
+                img(src='assets/image/img_blogueros.jpg')
             .col-md-12
                 if p==0
                     a(href='#') Augusto Álvarez Rodrich
@@ -87,134 +87,198 @@ mixin cabecera-roja(cabecera)
 
 mixin cabecera-gris(cabecera)
     p.cabecera-gris
-        a: span= cabecera
+        a: span=cabecera
+        
 mixin titulo-seccion(titulo)
-		.col-md-12
-			.container
-				h1.blog-titulo= titulo
-			
+    .col-md-12
+      .container
+        h1.blog-titulo= titulo
+      
 mixin blog(blog)
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 El gol de la muerte
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/blog_avatar_01.jpg")
-					h5 Blog
-					p LIBROS
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 Dios ha muerto... tengo las manos cubiertas de sangre
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/blog_avatar_02.jpg")
-					h5 Blog
-					p Ya lo pasado, PASADO
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 El gol de la muerte
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/blog_avatar_01.jpg")
+          h5 Blog
+          p LIBROS
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 Dios ha muerto... tengo las manos cubiertas de sangre
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/blog_avatar_02.jpg")
+          h5 Blog
+          p Ya lo pasado, PASADO
 
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 ¿Cuál es tu queso favorito?
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/blog_avatar_03.jpg")
-					h5 Blog
-					p Ya lo pasado, PASADO
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 ¿Cuál es tu queso favorito?
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/blog_avatar_03.jpg")
+          h5 Blog
+          p Ya lo pasado, PASADO
 
 
 
 
 mixin cambio(encabezado, foto, contenido)
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4=encabezado
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/#{foto}.jpg")
-					h5 Blog
-					p=contenido
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4=encabezado
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/#{foto}.jpg")
+          h5 Blog
+          p=contenido
 
 
 
 mixin columnistas(columnistas)
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 El gol de la muerte
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/img_author_columnista.jpg")
-					h5 Augusto Álvarez Rodrich
-					p Claro y directo
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 Dios ha muerto... tengo las manos cubiertas de sangre
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/img_author_columnista.jpg")
-					h5 Mirko Maluer
-					p Observador
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 El gol de la muerte
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/img_author_columnista.jpg")
+          h5 Augusto Álvarez Rodrich
+          p Claro y directo
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 Dios ha muerto... tengo las manos cubiertas de sangre
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/img_author_columnista.jpg")
+          h5 Mirko Maluer
+          p Observador
 
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 ¿Cuál es tu queso favorito?
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/img_author_columnista.jpg")
-					h5 Aldo Miyashiro
-					p Chino de mi barrio
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 ¿Cuál es tu queso favorito?
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/img_author_columnista.jpg")
+          h5 Aldo Miyashiro
+          p Chino de mi barrio
 
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 El gol de la muerte
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/img_author_columnista.jpg")
-					h5 Francisco Durand
-					p Tiro al blanco
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 Dios ha muerto... tengo las manos cubiertas de sangre
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/img_author_columnista.jpg")
-					h5 Humberto Campodónico
-					p Cristal de Mira
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 El gol de la muerte
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/img_author_columnista.jpg")
+          h5 Francisco Durand
+          p Tiro al blanco
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 Dios ha muerto... tengo las manos cubiertas de sangre
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/img_author_columnista.jpg")
+          h5 Humberto Campodónico
+          p Cristal de Mira
 
-	li.datos-blog
-		small Lunes, 14 de Julio 2015
-			h4 ¿Cuál es tu queso favorito?
-			.caja-blog
-				.autor-blog.text-left
-					img(src="assets/image/img_author_columnista.jpg")
-					h5 Javier Ágreda
-					p Jacque Perpetuo
+  li.datos-blog
+    small Lunes, 14 de Julio 2015
+      h4 ¿Cuál es tu queso favorito?
+      .caja-blog
+        .autor-blog.text-left
+          img(src="assets/image/img_author_columnista.jpg")
+          h5 Javier Ágreda
+          p Jacque Perpetuo
 
 mixin escritores(titu1, titu2, titu3, titu4)
-	li.columnistas
-		.caja-columnistas
-			.autor-blog.text-left
-				img(src="assets/image/img-columnistas.jpg")
-				h5 Francisco Durand
-				p=titu1
+  li.columnistas
+    .caja-columnistas
+      .autor-blog.text-left
+        img(src="assets/image/img-columnistas.jpg")
+        h5 Francisco Durand
+        p=titu1
 
-	li.columnistas
-		.caja-columnistas
-			.autor-blog.text-left
-				img(src="assets/image/img-columnistas.jpg")
-				h5 Humberto Campodónico
-				p=titu2
+  li.columnistas
+    .caja-columnistas
+      .autor-blog.text-left
+        img(src="assets/image/img-columnistas.jpg")
+        h5 Humberto Campodónico
+        p=titu2
 
-	li.columnistas
-		.caja-columnistas
-			.autor-blog.text-left
-				img(src="assets/image/img-columnistas.jpg")
-				h5 Javier Ágreda
-				p=titu3
+  li.columnistas
+    .caja-columnistas
+      .autor-blog.text-left
+        img(src="assets/image/img-columnistas.jpg")
+        h5 Javier Ágreda
+        p=titu3
 
-	li.columnistas
-		.caja-columnistas
-			.autor-blog.text-left
-				img(src="assets/image/img-columnistas.jpg")
-				h5 Javier Ágreda
-				p=titu4
+  li.columnistas
+    .caja-columnistas
+      .autor-blog.text-left
+        img(src="assets/image/img-columnistas.jpg")
+        h5 Javier Ágreda
+        p=titu4
     
-	
+
+mixin titular-portada(titulo, fecha, seccion)
+    .col-xs-12
+        h1.titular-portada= titulo
+        .datos-portada
+
+
+mixin columnista(foto, alt, columnista, titulo)
+    .col-xs-6.col-sm-4.col-md-2
+        a(href="#")
+            img.thumbnail(src="assets/image/#{foto}.jpg", alt="#{alt}")
+        p.columnistas-portada= columnista
+        p.titulo-columna-portada= titulo
+
+mixin mario
+    +columnista('img-columnistas', 'Mario Vargas Llosa', 'Mario Vargas Llosa', 'Megarrenuncia apulpinante')
+mixin augus
+    +columnista('img_blogueros', 'Augusto Álvarez Rodrich', 'Augusto Álvarez Rodrich', 'Respuesta a una derrota estridente')
+
+mixin columnistas-slider
+  .item
+      +mario
+      +augus
+      +mario
+      +augus
+      +mario
+      +augus
+   
+
+mixin cabecera-roja(cabecera)
+    p.cabecera-roja
+        a: span= cabecera
+
+
+mixin cabecera-gris(cabecera)
+    p.cabecera-gris
+        a: span= cabecera
+
+mixin resaltadas(tema, titular, clase)
+    .nota-resaltada
+        p.tema-resaltada #{tema}
+        a(class= clase, href="#")
+            p.titular-resaltada= titular
+            .sombra
+        p.todosobre Todo sobre
+            span #{tema}
+
+
+mixin ultimasnoticias(titulo, foto, texto)
+    .noticiareciente.clearfix
+        p.fecha Hace 1 hora 12 mins
+        p.tituloultima= titulo
+        .img-ultima
+            img(src= "assets/image/#{foto}.jpg", alt="foto")
+        .contenido
+            p= texto
+mixin emma()
+    +ultimasnoticias('Emma Watson protagonizará "La bella y La Bestia |Video"', 'img_news', 'La actriz Emma Watson fue confirmada por Disney como la protagonista de "La Bella y La Bestia" en la versión de carne y hueso.')
+mixin roque()
+    +ultimasnoticias('Roque Benavides respalda proyecto Tía María y espera que Conga se socialice', "un-image--thumb-01", 'Zenaida condori Contreras Arequipa Para el Presidente de la Compañia de Minas Buenaventura, Roque Benavides, el proyecto Tía María que promueve Southern Perú, ya debe...')
+mixin you()
+    +ultimasnoticias('Youtube: hombre finge ahogarse y su perro lo rescata |FOTOS', "img_sd_mascota", 'La actriz Emma Watson fue confirmada por Disney como la protagonista de "La Bella y La Bestia" en la versión de carne y hueso.')
+mixin real()
+    +ultimasnoticias('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid', 'img_video_destacado', 'Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
