@@ -1,71 +1,125 @@
+
 header
-    .top-header.bg-gray
-        .container.top-publicity
-            img.img-responsive.center-block(src="assets/image/banner_top.jpg")
-        .container.socialnav
-            row
-                .col-md-6
-                  a(href='#') 
-                      |LIBERO.PE
-                  a(href='#') 
-                      |ELPOPULAR.PE
-                  a(href='#') 
-                      |FUNDACIÓN GUSTAVO MOHME LLONA
-                .col-md-6.text-right
-                    button.label-danger
-                        |SUCRÍBETE AL BOLETÍN 
-                    +social-list
-                    input#search(type="search" placeholder="Buscar")
-                    label(for="search-input")
-                      a.fa.fa-search 
-    .bottom-header
-      .container
-        .row
-          .col-md-4
-            img.img-rsponsive(src="assets/image/logo-la-republica.jpg")
-          .col-md-4
-            .box-futbol
-              span ESPECIAL DE FÚTBOL
-              br
-              span TODO SOBRE LA CHAMPIONS LEAGUE
-          .col-md-4
-            .box-editorial
-              span La corrupción, los orígenes
-              br
-              span por: Gustavo Mohme Llona
-              img.img-autor.img-responsive(src="assets/image/img_author.jpg")
-        .row
-          .col-md-12
-            .nav-general-red
-              .btn-group.btn-group-justified(role='group', aria-label='Justified button group with nested dropdown')
-                a.btn.btn-default(href='#', role='button') POLÍTICA
-                a.btn.btn-default(href='#', role='button') ECONOMÍA
-                a.btn.btn-default(href='#', role='button') SOCIEDAD
-                a.btn.btn-default(href='#', role='button') ELECC. REGIONALES
-                a.btn.btn-default(href='#', role='button') DEPORTES
-                a.btn.btn-default(href='#', role='button') CHAMPIONS L.
-                a.btn.btn-default(href='#', role='button') ESPECTÁCULOS
-                a.btn.btn-default(href='#', role='button') ED. EMPRESA
-                a.btn.btn-default(href='#', role='button') REGIONALES
-                .btn-group(role='group')
-                  a.btn.btn-default.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                    | MÁS SECCIONES 
-                    span.caret
-                  ul.dropdown-menu
-                    li
-                      a(href='#') Action
-                    li
-                      a(href='#') Another action
-                    li
-                      a(href='#') Something else here
-                    li.divider(role='separator')
-                    li
-                      a(href='#') Separated link
-        .row
-          .slick-menu-nav
-        .row
-          .col-md-12
-            img(src='assets/image/banner-header.jpg')
+		.top-header.bg-gray
+				.container.top-publicity
+						img.img-responsive.center-block(src="assets/image/banner_top.jpg")
+				.container.socialnav
+						row
+								.col-md-6
+									a(href='#') 
+											|LIBERO.PE
+									a(href='#') 
+											|ELPOPULAR.PE
+									a(href='#') 
+											|FUNDACIÓN GUSTAVO MOHME LLONA
+								.col-md-6.text-right
+										.list-inline
+												a(class="buttonred" href="#") SUSCRIBETE AL BOLETÍN
+											li.list-inline
+												a(href="#")
+													i.fa.fa-facebook
+											li.list-inline
+												a(href="#")
+													i.fa.fa-twitter
+											li.list-inline
+												a(href="#")
+													i.fa.fa-google-plus
+											li.list-inline
+												a(href="#")
+													i.fa.fa-envelope
+											li.list-inline
+												a(href="#")
+													i.fa.fa-rss
+											li.list-inline
+												a
+													input#search(type="search" placeholder="Buscar")
+													label(for="search-input")
+															i.fa.fa-search 
+		.bottom-header.text-center
+			.container
+				.row.logo-section
+					.col-md-4
+						img.img-rsponsive(src="assets/image/logo-la-republica.jpg")
+					.col-md-4
+						.box-futbol
+							span.title ESPECIAL DE FÚTBOL
+							br
+							span.subtitle TODO SOBRE LA CHAMPIONS LEAGUE
+					.col-md-4.box-editorial
+						.box-editorial-text.text-center
+							span.editorial-title La corrupción, los orígenes
+							br
+							span por: Gustavo Mohme Llona
+							img.img-autor.img-responsive(src="assets/image/img_author.jpg")
+				.row
+					.col-md-12
+						.nav-general-red
+							.btn-group.btn-group-justified(role='group', aria-label='Justified button group with nested dropdown')
+								a.btn.btn-default(href='#', role='button') POLÍTICA
+								a.btn.btn-default(href='#', role='button') ECONOMÍA
+								a.btn.btn-default(href='#', role='button') SOCIEDAD
+								a.btn.btn-default(href='#', role='button') ELECC. REGIONALES
+								a.btn.btn-default(href='#', role='button') DEPORTES
+								a.btn.btn-default(href='#', role='button') CHAMPIONS L.
+								a.btn.btn-default(href='#', role='button') ESPECTÁCULOS
+								a.btn.btn-default(href='#', role='button') ED. EMPRESA
+								a.btn.btn-default(href='#', role='button') REGIONALES
+								.btn-group(role='group')
+									a.btn.btn-default.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+										| MÁS SECCIONES 
+										span.caret
+									ul.dropdown-menu
+										li
+											a(href='#') Action
+										li
+											a(href='#') Another action
+										li
+											a(href='#') Something else here
+										li.divider(role='separator')
+										li
+											a(href='#') Separated link
+				.row
+					.wrap-tags.tag-slide
+						h3 TEMAS DEL DÍA
+						.tags
+							ul.slick-initialized.slick-slider
+								.slick-list.draggable(tabindex='0')
+									.slick-track(style='opacity: 1; width: 12321px; transform: translate3d(-344px, 0px, 0px);')
+										li.slick-slide.slick-cloned(data-slick-index='-3')
+											a.atm-menu-tema-dia(href='') Globos de oro
+										li.slick-slide.slick-cloned(data-slick-index='-2')
+											a.atm-menu-tema-dia(href='') Youtube
+										li.slick-slide.slick-active(data-slick-index='0')
+											a.atm-menu-tema-dia(href='') Redes sociales
+										li.slick-slide.slick-active(data-slick-index='1')
+											a.atm-menu-tema-dia(href='') Charlie Hebdo
+										li.slick-slide.slick-active(data-slick-index='2')
+											a.atm-menu-tema-dia(href='') FC Barcelona
+										li.slick-slide(data-slick-index='3')
+											a.atm-menu-tema-dia(href='') Alianza Lima
+										li.slick-slide(data-slick-index='4')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide(data-slick-index='5')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide(data-slick-index='6')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide(data-slick-index='7')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide(data-slick-index='8')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide(data-slick-index='9')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide.slick-cloned(data-slick-index='10')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide.slick-cloned(data-slick-index='11')
+											a.atm-menu-tema-dia(href='') Municipalidad
+										li.slick-slide.slick-cloned(data-slick-index='12')
+											a.atm-menu-tema-dia(href='') Municipalidad
+								button.slick-prev(type='button', data-role='none', style='display: block;') Previous
+								button.slick-next(type='button', data-role='none', style='display: block;') Next
+				.row
+					.col-md-12
+						img(src='assets/image/banner-header.jpg')
 
 
-        
+				

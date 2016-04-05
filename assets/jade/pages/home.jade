@@ -8,7 +8,6 @@ html(lang='es-PE')
 				link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
 				link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet', type='text/css')
 				link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-				link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 				link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
 				link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
 				link(rel='stylesheet', type='text/css', href='assets/css/main.css')  
@@ -17,94 +16,7 @@ html(lang='es-PE')
 				include ../helpers/mixins.jade
 				include ../layout/header.jade
 				include ../pages/home-content.jade
-				include ../layout/aside.jade
 				include ../layout/footer.jade
-				section#titulares
-					.container
-							.row
-									+titular-portada('guerra en la municipalidad de lima metropolitana', 'Hace 12 minutos', 'política')
-	
-							.row
-									.col-xs-12.col-md-6
-											a(href="#").noticia-principal
-													p JNE inpulsará campaña en favor de la aprobación de la Reforma Electoral
-									.col-xs-12.col-md-6
-											a(href="#").noticia-secundaria
-													p Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/. 3 000 millones | Fotos
-											a(href="#").noticia-secundaria
-													p Sub 20 Perú vs Paraguay: bicolor empató 1-1  y pasó al hexagonal final del Sudamericano | Video
-				section
-						.container
-								.row#columnistas
-		
-										.columnista-slider
-		
-												+cabecera-roja('COLUMNISTAS')
-		
-												.slider
-														+columnistas-slider
-		
-												.slider   
-														
-														+columnistas-slider
-		
-												.slider    
-		
-														+columnistas-slider
-		
-				section#noticiasresaltadas
-						.container
-								.row
-										.hidden-xs.col-md-4
-												+resaltadas("Mercado de Pases 2015", "Mercado de Pases 2015: altas, bajas y rumores de los equipos peraunos", "nota a")
-												+resaltadas("Champions League", "¿Podrá el Real Madrid conseguir la Undécima?", "nota b")
-										.hidden-xs.col-md-4
-												+resaltadas("Régimen laboral juvenil", "Ollanta Humala: los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes |VIDEO", "nota c")                        
-												+resaltadas("Super Bowl", "El Super Bowl XLIX: New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahawks |VIDEO", "nota d")
-												
-												
-				section#ultimasnoticias
-						.container
-								.row
-										.col-xs-12.col-md-8
-												h3 ÚLTIMAS NOTICIAS
-														img(src="assets/image/double-arrow-bottom.png")
-												.ultimas
-														+emma
-														+roque
-														+you
-														+real
-														+emma
-														+roque
-														+you
-														+real
-														+emma
-														+roque
-														+you
-														+real
-														+roque
-														+you
-														+real
-														+emma
-														+roque
-														+you
-														+real
-														+emma
-														+roque
-														+you
-														+real
-														+roque
-														+you
-														+real
-														+emma
-														+roque
-														+you
-														+real
-														+emma
-														+roque
-														+you
-														+real
-														+real               
 					
 				script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
 				script(src='http://code.jquery.com/jquery-1.11.2.min.js')

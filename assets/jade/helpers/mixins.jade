@@ -5,6 +5,34 @@ mixin social-list()
   a(class="fa fa-envelope" href="#")
   a(class="fa fa-rss" href="#")
 
+mixin navegador(url,texto)
+  li: a(href=url) #{texto}
+mixin enlace(clase,url,texto)
+  a(href=url,class=clase) #{texto}
+mixin droplist
+  .dropdown
+    button.btn.btn-mas.dropdown-toggle(type="button", id="dropdownMenu1" data-toggle="dropdown", aria-haspopup="true", aria-expanded="true")
+      span más secciones
+      span.caret
+    ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+      li
+        a(href="index.html") home
+      li 
+        a(href="columnistas.html") Columnistas
+      li 
+        a(href="blog.html") Blog
+      li 
+        a(href="contacto.html") Contacto
+mixin gray-box(subtitle1, subtitle2, imgURL)
+  .gray-box
+    .media
+      a(href="#").media-left
+        img(src=imgURL, alt=subtitle1, title=subtitle1).media-object.img-responsive.img-thumbnail
+      .media-body
+        h4.media-heading=subtitle1
+        h5= subtitle2
+          if block
+            block
 mixin aweita(strong)
     .aw
         if strong==0

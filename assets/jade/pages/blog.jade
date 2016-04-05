@@ -1,47 +1,31 @@
 doctype html
 html(lang='es-PE')
-  head
-    meta(charset='UTF-8')
-    title Blog
-    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='assets/css/dist/main.css')
-    
-  body
-    include ../helpers/mixins
-    include ../layout/header
+	head
+		meta(charset='UTF-8')
+		title Blog
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+		
+	body
+		include ../helpers/variables.jade
+		include ../helpers/mixins.jade
+		include ../layout/header.jade
+		include ../pages/blog-content.jade
+		include ../layout/footer.jade
+		
 
-    section
-        .container
-            +titulo-seccion('Blogs')
-            .row
-                .col-md-12 
-                    .boxes-blog
-                        h3.titulo-noticia LO ÚLTIMO EN BLOG
-                            i.fa.fa-angle-double-down
-                        ul
-                            +blog('blog')
+		
 
-                            +cambio('El gol de la muerte', 'blog_avatar_01', 'Y tú... ¿Ya hiciste click?')
-                            +cambio('Dios ha muerto... tengo las manos cubiertas de sangre', 'blog_avatar_02', 'Educando con Amor Firme')
-                            +cambio('¿Cuál es tu queso favorito?', 'blog_avatar_03', 'Moda Ente Tendete')
-
-                            +blog('blog')
-                            +blog('blog')
-                            +blog('blog')
-                            +blog('blog')
-                            +blog('blog')
-
-    include ../layout/footer
-
-    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='assets/js/bootstrap.min.js')
-    script(type='text/javascript', src='assets/js/slick.min.js')
-    script(type='text/javascript', src='assets/js/bootstrap-hover-dropdown.min.js')
-    script(type='text/javascript', src='assets/js/modernizr.custom.68172.js')
-    script(type='text/javascript', src='assets/js/respond.js')  
+		script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+		script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+		script(type='text/javascript', src='assets/js/bootstrap.min.js')
+		script(type='text/javascript', src='assets/js/slick.min.js')
+		script(type='text/javascript', src='assets/js/bootstrap-hover-dropdown.min.js')
+		script(type='text/javascript', src='assets/js/modernizr.custom.68172.js')
+		script(type='text/javascript', src='assets/js/respond.js')  

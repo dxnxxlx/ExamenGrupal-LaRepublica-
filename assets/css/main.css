@@ -94,6 +94,8 @@ h1 {
   border-bottom: 2px solid #D7DCE1; }
   .top-header .socialnav {
     padding-top: 10px; }
+    .top-header .socialnav .list-inline {
+      display: inline-block; }
     .top-header .socialnav a {
       font-family: 'PT Sans',arial;
       font-weight: bold;
@@ -101,7 +103,148 @@ h1 {
       font-size: 12px;
       text-decoration: none;
       text-transform: uppercase; }
+    .top-header .socialnav i {
+      padding-right: 8px; }
+    .top-header .socialnav .fa-facebook {
+      color: #23527c; }
+    .top-header .socialnav .fa-twitter {
+      color: #55ACEE; }
+    .top-header .socialnav .fa-google-plus {
+      color: #CA4638; }
+    .top-header .socialnav .fa-envelope {
+      color: #FFBF00; }
+    .top-header .socialnav .fa-rss {
+      color: #FF8000; }
+    .top-header .socialnav .buttonred {
+      background-color: #d90000;
+      color: white;
+      font-size: 10px;
+      margin-right: 20px;
+      padding: 7px; }
 
+.bottom-header {
+  padding-top: 20px; }
+  .bottom-header .box-futbol {
+    border: 2px solid #F2F2F2;
+    border-bottom: 3px solid #111417;
+    margin: 0 auto;
+    width: 84%; }
+    .bottom-header .box-futbol .title, .bottom-header .box-futbol #home .box-title, #home .bottom-header .box-futbol .box-title {
+      -webkit-box-shadow: 1px 1px 3px #768696;
+      -moz-box-shadow: 1px 1px 3px #768696;
+      box-shadow: 1px 1px 3px #768696;
+      color: #F4F5F7;
+      font: bold 0.75em "Kameron", Arial, sans-serif !important;
+      background-color: #48535e;
+      padding: 2px 5px;
+      position: relative;
+      top: -10px; }
+
+.box-editorial {
+  -webkit-box-shadow: -2px 0px 2px #768696;
+  -moz-box-shadow: -2px 0px 2px #768696;
+  box-shadow: -2px 0px 2px #768696;
+  background: url("../image/img_editorial_text.jpg") no-repeat;
+  background-color: #2b333a; }
+  .box-editorial .box-editorial-text {
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+    position: relative; }
+    .box-editorial .box-editorial-text .img-autor {
+      position: absolute;
+      top: -12px;
+      right: -20px; }
+
+.nav-general-red {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .nav-general-red a {
+    background-color: #d90000;
+    color: white;
+    font-size: 10px; }
+
+.tag-slide {
+  background: #E4E7EA;
+  padding: 0;
+  border-radius: 5px; }
+  .tag-slide h3 {
+    background: #111417;
+    color: #fff;
+    padding: 8px 12px;
+    float: left;
+    margin: 0;
+    font-family: "Oswald",sans-serif;
+    font-size: 13px;
+    border-radius: 5px 0 0 5px; }
+    .tag-slide h3 .tags {
+      margin: 0 35px 0 135px; }
+      .tag-slide h3 .tags ul {
+        margin: 0;
+        padding: 0; }
+
+.tags ul li {
+  float: left;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 20px;
+  position: relative;
+  height: 30px;
+  line-height: 25px; }
+
+.tag-slide .tags ul li a {
+  margin-top: 3px;
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  color: #222;
+  font-size: 13px; }
+
+footer {
+  padding: 19px;
+  background: #F4F5F7;
+  color: #7D7D7D; }
+  footer h3 {
+    font-weight: 700; }
+  footer .enlace {
+    border-left: 1px #7D7D7D solid; }
+  footer a {
+    display: block;
+    font-size: 11px;
+    color: #7D7D7D;
+    text-decoration: none; }
+
+.right {
+  text-align: center;
+  background: #F4F5F7;
+  border-top: 1px #7D7D7D solid;
+  color: #7D7D7D; }
+  .right p {
+    font-size: 10px;
+    padding: 20px;
+    margin: 0; }
+  .right a {
+    list-style: none;
+    text-decoration: none;
+    color: #7D7D7D;
+    font-size: 10px; }
+
+@media (max-width: 750px) {
+  footer {
+    background: black;
+    margin-top: 30px; }
+    footer .contact {
+      color: white; } }
+@media (max-width: 962px) {
+  footer .contact {
+    text-align: center;
+    border: none; }
+  footer .enlace {
+    border-left: none;
+    border-top: 1px #F4F5F7 solid; }
+  footer .col-sm-16 {
+    padding: 20px; } }
 #home {
   text-align: center; }
   #home .color-red {

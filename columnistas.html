@@ -3,610 +3,726 @@
   <head>
     <meta charset="UTF-8">
     <title>Columnistas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/dist/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dist/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/dist/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   </head>
   <body>
-  </body>
-  <section>
-    <div class="container">
-          <div class="col-md-12">
-            <div class="container">
-              <h1 class="blog-titulo">Columnistas</h1>
+    <header>
+      <div class="top-header bg-gray">
+        <div class="container top-publicity"><img src="assets/image/banner_top.jpg" class="img-responsive center-block"></div>
+        <div class="container socialnav">
+          <row>
+            <div class="col-md-6"><a href="#">
+                 
+                LIBERO.PE</a><a href="#">
+                 
+                ELPOPULAR.PE</a><a href="#">
+                 
+                FUNDACIÓN GUSTAVO MOHME LLONA</a></div>
+            <div class="col-md-6 text-right">
+              <div class="list-inline"><a href="#" class="buttonred">SUSCRIBETE AL BOLETÍN</a></div>
+              <li class="list-inline"><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="list-inline"><a href="#"><i class="fa fa-envelope"></i></a></li>
+              <li class="list-inline"><a href="#"><i class="fa fa-rss"></i></a></li>
+              <li class="list-inline"><a>
+                  <input id="search" type="search" placeholder="Buscar">
+                  <label for="search-input"><i class="fa fa-search"> </i></label></a></li>
+            </div>
+          </row>
+        </div>
+      </div>
+      <div class="bottom-header text-center">
+        <div class="container">
+          <div class="row logo-section">
+            <div class="col-md-4"><img src="assets/image/logo-la-republica.jpg" class="img-rsponsive"></div>
+            <div class="col-md-4">
+              <div class="box-futbol"><span class="title">ESPECIAL DE FÚTBOL</span><br><span class="subtitle">TODO SOBRE LA CHAMPIONS LEAGUE</span></div>
+            </div>
+            <div class="col-md-4 box-editorial">
+              <div class="box-editorial-text text-center"><span class="editorial-title">La corrupción, los orígenes</span><br><span>por: Gustavo Mohme Llona</span><img src="assets/image/img_author.jpg" class="img-autor img-responsive"></div>
             </div>
           </div>
-      <div class="row">
-        <div class="col-md-12"> 
-          <div class="boxes-blog">
-            <h3 class="titulo-noticia">LO ÚLTIMO EN COLUMNISTAS<i class="fa fa-angle-double-down"></i></h3>
-            <ul>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>El gol de la muerte</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Augusto Álvarez Rodrich</h5>
-                          <p>Claro y directo</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Mirko Maluer</h5>
-                          <p>Observador</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>¿Cuál es tu queso favorito?</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Aldo Miyashiro</h5>
-                          <p>Chino de mi barrio</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>El gol de la muerte</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Francisco Durand</h5>
-                          <p>Tiro al blanco</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Humberto Campodónico</h5>
-                          <p>Cristal de Mira</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>¿Cuál es tu queso favorito?</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Javier Ágreda</h5>
-                          <p>Jacque Perpetuo</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>El gol de la muerte</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Augusto Álvarez Rodrich</h5>
-                          <p>Claro y directo</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Mirko Maluer</h5>
-                          <p>Observador</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>¿Cuál es tu queso favorito?</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Aldo Miyashiro</h5>
-                          <p>Chino de mi barrio</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>El gol de la muerte</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Francisco Durand</h5>
-                          <p>Tiro al blanco</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Humberto Campodónico</h5>
-                          <p>Cristal de Mira</p>
-                        </div>
-                      </div></small></li>
-                  <li class="datos-blog"><small>Lunes, 14 de Julio 2015
-                      <h4>¿Cuál es tu queso favorito?</h4>
-                      <div class="caja-blog">
-                        <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
-                          <h5>Javier Ágreda</h5>
-                          <p>Jacque Perpetuo</p>
-                        </div>
-                      </div></small></li>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="nav-general-red">
+                <div role="group" aria-label="Justified button group with nested dropdown" class="btn-group btn-group-justified"><a href="#" role="button" class="btn btn-default">POLÍTICA</a><a href="#" role="button" class="btn btn-default">ECONOMÍA</a><a href="#" role="button" class="btn btn-default">SOCIEDAD</a><a href="#" role="button" class="btn btn-default">ELECC. REGIONALES</a><a href="#" role="button" class="btn btn-default">DEPORTES</a><a href="#" role="button" class="btn btn-default">CHAMPIONS L.</a><a href="#" role="button" class="btn btn-default">ESPECTÁCULOS</a><a href="#" role="button" class="btn btn-default">ED. EMPRESA</a><a href="#" role="button" class="btn btn-default">REGIONALES</a>
+                  <div role="group" class="btn-group"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="btn btn-default dropdown-toggle">MÁS SECCIONES <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="wrap-tags tag-slide">
+              <h3>TEMAS DEL DÍA</h3>
+              <div class="tags">
+                <ul class="slick-initialized slick-slider">
+                  <div tabindex="0" class="slick-list draggable">
+                    <div style="opacity: 1; width: 12321px; transform: translate3d(-344px, 0px, 0px);" class="slick-track">
+                      <li data-slick-index="-3" class="slick-slide slick-cloned"><a href="" class="atm-menu-tema-dia">Globos de oro</a></li>
+                      <li data-slick-index="-2" class="slick-slide slick-cloned"><a href="" class="atm-menu-tema-dia">Youtube</a></li>
+                      <li data-slick-index="0" class="slick-slide slick-active"><a href="" class="atm-menu-tema-dia">Redes sociales</a></li>
+                      <li data-slick-index="1" class="slick-slide slick-active"><a href="" class="atm-menu-tema-dia">Charlie Hebdo</a></li>
+                      <li data-slick-index="2" class="slick-slide slick-active"><a href="" class="atm-menu-tema-dia">FC Barcelona</a></li>
+                      <li data-slick-index="3" class="slick-slide"><a href="" class="atm-menu-tema-dia">Alianza Lima</a></li>
+                      <li data-slick-index="4" class="slick-slide"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="5" class="slick-slide"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="6" class="slick-slide"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="7" class="slick-slide"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="8" class="slick-slide"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="9" class="slick-slide"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="10" class="slick-slide slick-cloned"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="11" class="slick-slide slick-cloned"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                      <li data-slick-index="12" class="slick-slide slick-cloned"><a href="" class="atm-menu-tema-dia">Municipalidad</a></li>
+                    </div>
+                  </div>
+                  <button type="button" data-role="none" style="display: block;" class="slick-prev">Previous</button>
+                  <button type="button" data-role="none" style="display: block;" class="slick-next">Next</button>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"><img src="assets/image/banner-header.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+            <div class="col-md-12">
+              <div class="container">
+                <h1 class="blog-titulo">Columnistas</h1>
+              </div>
+            </div>
+        <div class="row">
+          <div class="col-md-12"> 
+            <div class="boxes-blog">
+              <h3 class="titulo-noticia">LO ÚLTIMO EN COLUMNISTAS<i class="fa fa-angle-double-down"></i></h3>
+              <ul>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>El gol de la muerte</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Augusto Álvarez Rodrich</h5>
+                            <p>Claro y directo</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Mirko Maluer</h5>
+                            <p>Observador</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>¿Cuál es tu queso favorito?</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Aldo Miyashiro</h5>
+                            <p>Chino de mi barrio</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>El gol de la muerte</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Francisco Durand</h5>
+                            <p>Tiro al blanco</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Humberto Campodónico</h5>
+                            <p>Cristal de Mira</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>¿Cuál es tu queso favorito?</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Javier Ágreda</h5>
+                            <p>Jacque Perpetuo</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>El gol de la muerte</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Augusto Álvarez Rodrich</h5>
+                            <p>Claro y directo</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Mirko Maluer</h5>
+                            <p>Observador</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>¿Cuál es tu queso favorito?</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Aldo Miyashiro</h5>
+                            <p>Chino de mi barrio</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>El gol de la muerte</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Francisco Durand</h5>
+                            <p>Tiro al blanco</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>Dios ha muerto... tengo las manos cubiertas de sangre</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Humberto Campodónico</h5>
+                            <p>Cristal de Mira</p>
+                          </div>
+                        </div></small></li>
+                    <li class="datos-blog"><small>Lunes, 14 de Julio 2015
+                        <h4>¿Cuál es tu queso favorito?</h4>
+                        <div class="caja-blog">
+                          <div class="autor-blog text-left"><img src="assets/image/img_author_columnista.jpg">
+                            <h5>Javier Ágreda</h5>
+                            <p>Jacque Perpetuo</p>
+                          </div>
+                        </div></small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="text-center">
+          <button class="principal">todas las columnas</button>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="boxes-blog">
+              <h3 class="titulo-noticia">TODOS LOS COLUMNISTAS<i class="fa fa-angle-double-down"></i></h3>
+            </div>
+            <div class="barra-roja text-center">
+              <button class="todos">TODOS</button>
+              <button class="letra">ABC</button>
+              <button class="letra">DEF</button>
+              <button class="letra">GHI</button>
+              <button class="letra">JKL</button>
+              <button class="letra">MNO</button>
+              <button class="letra">PQRS</button>
+              <button class="letra">TUV</button>
+              <button class="letra">WXYZ</button>
+            </div>
+            <ul class="sinpadding">
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Tiro al blanco</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Cristal de Mira</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Delito de Opinión</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Actualidad Económico - Oscar Dancourt</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Mirada externa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Defensa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Tiro al blanco</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Cristal de Mira</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Delito de Opinión</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Actualidad Económico - Oscar Dancourt</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Mirada externa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Defensa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Tiro al blanco</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Cristal de Mira</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Delito de Opinión</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Actualidad Económico - Oscar Dancourt</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Mirada externa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Defensa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Tiro al blanco</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Cristal de Mira</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Delito de Opinión</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Actualidad Económico - Oscar Dancourt</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Mirada externa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Defensa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Tiro al blanco</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Cristal de Mira</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Delito de Opinión</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Actualidad Económico - Oscar Dancourt</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Mirada externa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Defensa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Tiro al blanco</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Cristal de Mira</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Delito de Opinión</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Actualidad Económico - Oscar Dancourt</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Mirada externa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Defensa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Tiro al blanco</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Cristal de Mira</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Jaque Perpetuo</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Francisco Durand</h5>
+                        <p>Delito de Opinión</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Humberto Campodónico</h5>
+                        <p>Actualidad Económico - Oscar Dancourt</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Mirada externa</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="columnistas">
+                    <div class="caja-columnistas">
+                      <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
+                        <h5>Javier Ágreda</h5>
+                        <p>Defensa</p>
+                      </div>
+                    </div>
+                  </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="text-center">
-        <button class="principal">todas las columnas</button>
-      </div>
+    </section>
+    <footer>
       <div class="row">
-        <div class="col-md-12">
-          <div class="boxes-blog">
-            <h3 class="titulo-noticia">TODOS LOS COLUMNISTAS<i class="fa fa-angle-double-down"></i></h3>
+        <div class="col-xs-12 col-xs-offset-1">
+          <div class="row">
+            <div class="col-md-4 contact"><img src="assets/image/logo-grupo-la-republica.png">
+              <h3>Grupo La Republica Digital</h3>
+              <p>Jr. Camaná 320 Cercado de Lima</p>
+              <p>Relefono: 711-6000</p>
+              <p>(Central Telefónica)</p><span>Todos los derechos reservados - 2015</span>
+            </div>
+            <div class="col-md-8 hidden-xs enlace">
+              <div class="row">
+                <div class="col-sm-2"><a href="#">Roger Federer</a><a href="#">SBS</a><a href="#">Scarlett Johansson</a><a href="#">Scotiabank</a><a href="#">Selena Gómez</a><a href="#">Spiderman</a><a href="#">Sporting Cristal</a><a href="#">Sunat</a><a href="#">Telefónica del Perú</a><a href="#">The Walking Dead</a><a href="#">Twitter</a><a href="#">Universidad Cesar Vallejo</a><a href="#">Universidad San Martin</a><a href="#">Universitario de Deportes</a><a href="#">Xbox</a><a href="#">Youtube</a><a href="#">Bayern Múnich</a><a href="#">Bayern Múnich</a><a href="#">BBVA</a><a href="#">Xbox</a><a href="#">BCP</a></div>
+                <div class="col-sm-2"><a href="#">Al fondo hay sitio</a><a href="#">Alejandro Toledo</a><a href="#">Alianza Lima</a><a href="#">Alianza lima</a><a href="#">Banco de la Nación</a><a href="#">Barack Obama</a><a href="#">Universidad Cesar Vallego</a><a href="#">Universidad San Martin</a><a href="#">Barcelona</a><a href="#">Bayern Múnich</a><a href="#">Bayern Múnich</a><a href="#">BBVA</a><a href="#">Xbox</a><a href="#">BCP</a><a href="#">Batman</a><a href="#">Bayern Múnich</a><a href="#">Bayern Múnich</a><a href="#">BBVA</a><a href="#">Xbox</a><a href="#">BCP</a></div>
+                <div class="col-sm-2"> <a href="#">One Direction</a><a href="#">ONPE</a><a href="#">Pablo Escobar</a><a href="#">Paolo Guerrero</a><a href="#">Pension 65</a><a href="#">PNP</a><a href="#">Precio del dólar</a><a href="#">Universidad Cesar Vallejo </a><a href="#">Universidad San Martin</a><a href="#">Premier League</a><a href="#">Bayern Múnich</a><a href="#">Bayern Múnich</a><a href="#">BBVA</a><a href="#">Xbox</a><a href="#">BCP</a><a href="#">Proyecto Conga</a><a href="#">PUCP</a><a href="#">Real Madrid</a><a href="#">Redes Sociales</a><a href="#">Reniec</a><a href="#">Robert Pattinson</a></div>
+                <div class="col-sm-2"><a href="#">Al fondo hay sitio</a><a href="#">Alejandro Toledo</a><a href="#">Alianza Lima</a><a href="#">Alianza lima</a><a href="#">Banco de la Nación</a><a href="#">Barack Obama</a><a href="#">Universidad Cesar Vallego</a><a href="#">Universidad San Martin</a><a href="#">Barcelona</a><a href="#">Bayern Múnich</a><a href="#">Bayern Múnich</a><a href="#">BBVA</a><a href="#">Xbox</a><a href="#">BCP</a><a href="#">Batman</a><a href="#">Bayern Múnich</a><a href="#">Bayern Múnich</a><a href="#">BBVA</a><a href="#">Xbox</a><a href="#">BCP</a></div>
+              </div>
+            </div>
           </div>
-          <div class="barra-roja text-center">
-            <button class="todos">TODOS</button>
-            <button class="letra">ABC</button>
-            <button class="letra">DEF</button>
-            <button class="letra">GHI</button>
-            <button class="letra">JKL</button>
-            <button class="letra">MNO</button>
-            <button class="letra">PQRS</button>
-            <button class="letra">TUV</button>
-            <button class="letra">WXYZ</button>
-          </div>
-          <ul class="sinpadding">
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Tiro al blanco</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Cristal de Mira</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Delito de Opinión</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Actualidad Económico - Oscar Dancourt</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Mirada externa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Defensa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Tiro al blanco</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Cristal de Mira</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Delito de Opinión</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Actualidad Económico - Oscar Dancourt</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Mirada externa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Defensa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Tiro al blanco</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Cristal de Mira</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Delito de Opinión</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Actualidad Económico - Oscar Dancourt</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Mirada externa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Defensa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Tiro al blanco</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Cristal de Mira</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Delito de Opinión</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Actualidad Económico - Oscar Dancourt</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Mirada externa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Defensa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Tiro al blanco</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Cristal de Mira</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Delito de Opinión</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Actualidad Económico - Oscar Dancourt</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Mirada externa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Defensa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Tiro al blanco</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Cristal de Mira</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Delito de Opinión</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Actualidad Económico - Oscar Dancourt</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Mirada externa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Defensa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Tiro al blanco</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Cristal de Mira</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Jaque Perpetuo</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Francisco Durand</h5>
-                      <p>Delito de Opinión</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Humberto Campodónico</h5>
-                      <p>Actualidad Económico - Oscar Dancourt</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Mirada externa</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="columnistas">
-                  <div class="caja-columnistas">
-                    <div class="autor-blog text-left"><img src="assets/image/img-columnistas.jpg">
-                      <h5>Javier Ágreda</h5>
-                      <p>Defensa</p>
-                    </div>
-                  </div>
-                </li>
-          </ul>
         </div>
       </div>
+    </footer>
+    <div class="col-xs-12 col-xs-offset-1 right hidden-xs">
+      <p>Diario del PAL: <a href="#">| Clarín </a><a href="#">| La Tercera </a><a href="#">| El Universal Colombia </a><a href="#">| El Universal Venezuela </a><a href="#">| Vanguardia </a><a href="#">| La Prensa </a><a href="#">| El Salvador </a><a href="#">| La verdad </a><a href="#">| Diario Libre</a><a href="#">| El diario de hoy </a><a href="#">| El Colombiano</a></p>
     </div>
-  </section>
-  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/slick.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap-hover-dropdown.min.js"></script>
-  <script type="text/javascript" src="assets/js/modernizr.custom.68172.js"></script>
-  <script type="text/javascript" src="assets/js/respond.js"> </script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.68172.js"></script>
+    <script type="text/javascript" src="assets/js/respond.js"> </script>
+  </body>
 </html>
